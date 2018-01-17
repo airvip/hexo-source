@@ -88,10 +88,10 @@ $ hexo d
 #拉取源码
 $ git pull origin master
 #新建文章
-$ hexo new "电脑A文章" 
+$ hexo new "电脑B文章" 
 #编写完发布源码
 $ git add .
-$ git commit -m "电脑A文章"
+$ git commit -m "电脑B文章"
 $ git push origin master
 #编译后发布博客
 $ hexo g
