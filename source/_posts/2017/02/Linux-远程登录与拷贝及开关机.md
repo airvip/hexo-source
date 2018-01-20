@@ -1,5 +1,5 @@
 ---
-title: Linux 远程管理常用命令一
+title: Linux 之远程登录、拷贝及开关机
 date: 2017-02-02 23:09:15
 tags:
     - Linux
