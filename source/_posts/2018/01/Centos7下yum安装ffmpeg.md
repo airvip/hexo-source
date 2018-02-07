@@ -28,13 +28,12 @@ CentOS Linux release 7.3.1611 (Core)
 
 ## 进行安装
 
-1. 安装顺序
- * ffmpeg 
- * ffmpeg-devel 
- * ffmpeg-php 
+### 安装顺序
+1. ffmpeg 
+2. ffmpeg-devel 
+3. ffmpeg-php 
 
-2. 安装前提
-
+### 安装repolist源
 查看安装 ffmpeg
 ``` bash
 $ yum list installed | grep ffmpeg
@@ -51,13 +50,14 @@ $ sudo yum install -y epel-release
 ``` bash
 sudo rpm –import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 ```
-安装完成之后，查看软件源是否写入文件成功
+
+上面操作完成之后，查看软件源是否写入文件成功
+
 ``` bash
 $ yum repolist 
 ```
-------
 
-安装 Nux-Dextop 源
+### 安装 Nux-Dextop 源
 ``` bash
 $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
 ```
@@ -65,12 +65,15 @@ $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-relea
 ``` bash
 $ sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro 
 ```
-安装完成之后，查看软件源是否写入文件成功
+
+上面操作完成之后，查看软件源是否写入文件成功
+
 ``` bash
 $ yum repolist 
-``` 
+```
 
-## 安装ffmpeg与ffmpeg-devel
+## 安装 ff 与 ff-dev
+
 ``` bash
 $ yum list | grep ffmpeg #查看 yum 源中有没有 ffmpeg 包
 ffmpeg.x86_64                            2.6.8-3.el7.nux              nux-dextop
