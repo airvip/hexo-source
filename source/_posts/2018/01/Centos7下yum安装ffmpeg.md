@@ -95,18 +95,6 @@ $ wget https://jaist.dl.sourceforge.net/project/ffmpeg-php/ffmpeg-php/0.6.0/ffmp
 $ git clone https://github.com/tony2001/ffmpeg-php.git #我使用的
 ```
 
-## 重要说明
-由于Nux Dextop仓库可能会与其他第三方库有冲突，比如（Repoforge和ATrpms）。所以，建议默认情况下不启用 Nux Dextop 仓库。
-
-打开`/etc/yum.repos.d/nux-dextop.repo`，将"enabled=1" 修改为 "enabled=0"。
-``` bash
-$ sudo vi /etc/yum.repos.d/nux-dextop.repo
-```
-当需要使用Nux Dextop仓库时，显式启用仓库。
-``` bash
-$ sudo yum --enablerepo=nux-dextop install -y <软件包名> 
-```
-
 进入下载的文件夹，开始编译安装
 ``` bash
 cd ffmpeg-php/
@@ -168,4 +156,16 @@ sudo vim /usr/local/php7/etc/php.ini
 ;disable_functions = passthru,exec,system,chroot,chgrp,chown,proc_open,proc_get_status,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server,fsocket,popen
 # 去掉 proc_open 改为下面代码
 disable_functions = passthru,exec,system,chroot,chgrp,chown,proc_get_status,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server,fsocket,popen
+```
+
+## 重要说明
+由于Nux Dextop仓库可能会与其他第三方库有冲突，比如（Repoforge和ATrpms）。所以，建议默认情况下不启用 Nux Dextop 仓库。
+
+打开`/etc/yum.repos.d/nux-dextop.repo`，将"enabled=1" 修改为 "enabled=0"。
+``` bash
+$ sudo vi /etc/yum.repos.d/nux-dextop.repo
+```
+当需要使用Nux Dextop仓库时，显式启用仓库。
+``` bash
+$ sudo yum --enablerepo=nux-dextop install -y <软件包名> 
 ```
