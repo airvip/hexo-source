@@ -28,7 +28,7 @@ CentOS Linux release 7.3.1611 (Core)
 
 ## 进行安装
 
-### 安装顺序
+### 安装准备
 1. ffmpeg 
 2. ffmpeg-devel 
 3. ffmpeg-php 
