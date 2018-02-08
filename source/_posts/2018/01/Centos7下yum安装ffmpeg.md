@@ -117,8 +117,7 @@ $ sudo make install # 安装
 $ sudo vim /usr/local/php7/etc/php.ini # 编辑 php.ini ，加入 extension=ffmpeg.so
 或者使用 `sudo echo "extension=ffmpeg.so" >> /usr/local/php7/etc/php.ini` 
 #重启php-fpm
-//重启 
-service php-fpm restart 
+$ sudo service php-fpm restart 
 ```
 
 ## 常见问题
