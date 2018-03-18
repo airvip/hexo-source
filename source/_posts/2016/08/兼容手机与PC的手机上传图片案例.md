@@ -2,7 +2,7 @@
 title: 兼容手机与PC的手机上传图片案例
 date: 2016-08-01 23:52:12
 tags:
-    - JS
+    - Javascript
     - 图片上传
 ---
 
