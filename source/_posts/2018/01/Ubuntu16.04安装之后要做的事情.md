@@ -78,8 +78,9 @@ $ sudo apt-get -y install unrar
 ``` bash
 $ vim /etc/apt/sources.list.d/ubuntukylin.list # 新建Ubuntukylin 软件源文件
 ```
-写入下面代码，并保存
+  写入下面代码，并保存
 `deb http://archive.ubuntukylin.com:10006/ubuntukylin trusty main`
+再执行下面代码
 ``` bash
 $ sudo apt-get update  # 更新软件源
 $ sudo apt-get install sogoupinyin  # 安装搜狗输入法
@@ -92,6 +93,12 @@ $ sudo apt-get install libappindicator1 libindicator7
 $ sudo dpkg -i google-chrome-stable_current_amd64.deb   
 $ sudo apt-get -f install 
 ```
+
+5. 安装 sublime text3
+``` bash
+$ 
+```
+
 
 
 
