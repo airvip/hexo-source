@@ -168,6 +168,12 @@ prepend domain-name-servers 114.114.114.114;
 prepend domain-name-servers 223.5.5.5;  
 ```
 
+16. 安装python包管理器pip
+``` bash
+$ sudo apt-get install python3-pip # for python3
+$ sudo apt-get install python-pip # for python2
+```
+
 
 
 
