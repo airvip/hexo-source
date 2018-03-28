@@ -96,8 +96,78 @@ $ sudo apt-get -f install
 
 5. 安装 sublime text3
 ``` bash
-$ 
+$ sudo add-apt-repository ppa:webupd8team/sublime-text-3    
+$ sudo apt-get update    
+$ sudo apt-get -y install sublime-text   
 ```
+
+6. 安装经典菜单指示器
+``` bash
+$ sudo add-apt-repository ppa:diesch/testing  
+$ sudo apt-get update  
+$ sudo apt-get install classicmenu-indicator  
+```
+![classicmenu-indicator](/img/201801/ubuntu1604/classicmenu.png)
+
+7. 安装系统指示器SysPeek
+``` bash
+$ sudo add-apt-repository ppa:nilarimogard/webupd8    
+$ sudo apt-get update    
+$ sudo apt-get install syspeek  
+```
+![syspeek](/img/201801/ubuntu1604/syspeek.png)
+
+8. 安装vpnc和git
+``` bash
+$ sudo apt-get install vpnc git
+```
+
+9. 安装nodejs和npm
+``` bash
+$ sudo apt-get -y install nodejs npm
+$ npm config set registery https://registry.npm.tabao.org # 使用淘宝镜像
+$ npm config list # 查看npm配置信息
+```
+
+10. 安装vscode
+  去`https://code.visualstudio.com/`下载deb安装包
+``` bash
+$ sudo dpkg -i <file>.deb
+$ sudo apt-get install -f
+```
+
+11. 安装多线程下载神器 axel
+``` bash
+$ sudo apt-get -y install axel
+```
+
+12. 安装apt-fast
+  apt-fast 是用 axel 来加速 apt-get 软件安装的脚本,由于是多线程下载，所以加速效果还是很明显的。
+  使用 apt-fast 命令替代原 apt-get 命令即可。
+``` bash
+$ sudo apt-get -y install apt-fast
+```
+
+13. 安装openssh-server
+``` bash
+$ sudo apt-get -y install openssh-server 
+```
+
+14. 安装lnav
+lnav工具是在终端界面看日志的神器
+``` bash
+$ sudo apt-get -y install lnav
+$ lnav /var/log/dpkg.log # 查看dpkg日志
+```
+
+15. 自定义DHCP网络的DNS Server IP地址
+  执行 `sudo vim /etc/dhcp/dhclient.conf` ,在 `#prepend domain-name-servers 127.0.0.1;` 下面添加114与阿里云的 DNS，这样会优先使用 aliyun 的 DNS，次要使用 114 的 DNS
+``` bash
+#prepend domain-name-servers 127.0.0.1;
+prepend domain-name-servers 114.114.114.114;  
+prepend domain-name-servers 223.5.5.5;  
+```
+
 
 
 
