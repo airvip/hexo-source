@@ -127,7 +127,11 @@ $ sudo apt-get install vpnc git
 $ sudo apt-get -y install nodejs npm
 $ npm config set registery https://registry.npm.tabao.org # 使用淘宝镜像
 $ npm config list # 查看npm配置信息
+$ sudo npm install n -g # 全局安装n管理器(用于管理nodejs版本)
+$ sudo n stable # 安装最新nodejs 稳定版
+$ sudo node -v # 查看版本
 ```
+
 
 10. 安装vscode
   去`https://code.visualstudio.com/`下载deb安装包
