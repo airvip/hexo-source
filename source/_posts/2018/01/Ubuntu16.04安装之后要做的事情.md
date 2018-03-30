@@ -124,7 +124,7 @@ $ sudo apt-get install vpnc git
 
 9. 安装nodejs和npm
 ``` bash
-$ sudo apt-get -y install nodejs npm
+$ sudo apt-get -y install nodejs npm nodejs-legacy
 $ npm config set registery https://registry.npm.tabao.org # 使用淘宝镜像
 $ npm config list # 查看npm配置信息
 ```
