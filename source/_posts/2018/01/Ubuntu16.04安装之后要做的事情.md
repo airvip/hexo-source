@@ -107,7 +107,7 @@ $ sudo add-apt-repository ppa:diesch/testing
 $ sudo apt-get update  
 $ sudo apt-get install classicmenu-indicator  
 ```
-![classicmenu-indicator](/img/201801/ubuntu1604/classicmenu.png)
+  ![classicmenu-indicator](/img/201801/ubuntu1604/classicmenu.png)
 
 7. 安装系统指示器SysPeek
 ``` bash
@@ -115,7 +115,7 @@ $ sudo add-apt-repository ppa:nilarimogard/webupd8
 $ sudo apt-get update    
 $ sudo apt-get install syspeek  
 ```
-![syspeek](/img/201801/ubuntu1604/syspeek.png)
+  ![syspeek](/img/201801/ubuntu1604/syspeek.png)
 
 8. 安装vpnc和git
 ``` bash
@@ -124,7 +124,7 @@ $ sudo apt-get install vpnc git
 
 9. 安装nodejs和npm
 ``` bash
-$ sudo apt-get -y install nodejs npm
+$ sudo apt-get -y install nodejs npm nodejs-legacy
 $ npm config set registery https://registry.npm.tabao.org # 使用淘宝镜像
 $ npm config list # 查看npm配置信息
 $ sudo npm install n -g # 全局安装n管理器(用于管理nodejs版本)
