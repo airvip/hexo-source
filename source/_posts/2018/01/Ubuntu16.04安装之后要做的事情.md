@@ -178,6 +178,11 @@ $ sudo apt-get install python3-pip # for python3
 $ sudo apt-get install python-pip # for python2
 ```
 
+17. 安装shutter截屏软件
+``` bash
+$ sudo apt-get install shutter
+```
+
 
 
 
