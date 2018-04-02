@@ -14,5 +14,47 @@ tags:
 
 安装环境及列表如下
 ``` bash
+$ uname -a
+Linux airvip-ubuntu 4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+# 安装列表
+1. nginx 1.10.3
+2. php-7.0
+3. mysql 5.7.21
+```
 
+## 安装nginx
+``` bash
+$ sudo apt-cache search nginx  # 搜索nginx安装包
+nginx - small, powerful, scalable web/proxy server
+nginx-common - small, powerful, scalable web/proxy server - common files
+nginx-core - nginx web/proxy server (core version)
+...
+$ sudo apt-get -y install nginx # 安装nginx
+$ systemctl status nginx # 查看nginx状态 默认已启动
+$ nginx -v # 查看nginx版本
+nginx version: nginx/1.10.3 (Ubuntu
+```
+
+## 安装php7.0
+``` bash
+$ sudo apt-cache search php7.* # 搜索php7安装包
+php7.0 - server-side, HTML-embedded scripting language (metapackage)
+php7.0-cgi - server-side, HTML-embedded scripting language (CGI binary)
+...
+$ sudo apt-get -y install php7.0-fpm php7.0-mysql php7.0-common php7.0-curl php7.0-cli php7.0-mcrypt php7.0-mbstring php7.0-dom php7.0-soap # 安装php7及其扩展
+$ systemctl status php7.0-fpm # 查看php-fpm状态 默认已启动
+```
+
+
+## 安装mysql5.7
+``` bash
+$ sudo apt-cache search mysql-server-5.* # 搜索mysql5服务端安装包
+mysql-server - MySQL database server (metapackage depending on the latest version)
+mysql-server-5.7 - MySQL database server binaries and system database setup
+$ sudo apt-cache search mysql-client-5.* # 搜索mysql5客户端安装包
+mysql-client - MySQL database client (metapackage depending on the latest version)
+mysql-client-5.7 - MySQL database client binaries
+$ sudo apt-get -y install mysql-server-5.7 mysql-client-5.7 # 安装mysql5.7服务器及客户端
+# 在安装过程中提示设置mysql的密码
+$ systemctl status mysql # 查看mysql状态 默认已启动
 ```
