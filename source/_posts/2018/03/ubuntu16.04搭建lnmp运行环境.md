@@ -32,8 +32,22 @@ nginx-core - nginx web/proxy server (core version)
 $ sudo apt-get -y install nginx # 安装nginx
 $ systemctl status nginx # 查看nginx状态 默认已启动
 $ nginx -v # 查看nginx版本
-nginx version: nginx/1.10.3 (Ubuntu
+nginx version: nginx/1.10.3 (Ubuntu)
 ```
+## 配置nginx
+nginx默认的用户是`www-data`,可以在`/etc/nginx/nginx.conf`下查看。
+``` bash
+$ head /etc/nginx/nginx.conf # 第一行用户信息
+```
+如果不是可以修改成`www-data`
+``` bash
+$ vim /etc/nginx/nginx.conf # 改成www-data
+```
+重启nginx
+```
+$ sudo systemctl restart nginx 
+```
+
 
 ## 安装php7.0
 ``` bash
@@ -45,6 +59,24 @@ $ sudo apt-get -y install php7.0-fpm php7.0-mysql php7.0-common php7.0-curl php7
 $ systemctl status php7.0-fpm # 查看php-fpm状态 默认已启动
 ```
 
+## 配置php7.0
+打开php.ini配置文件
+``` bash
+$ sudo vim /etc/php/7.0/fpm/php.ini
+```
+找到cgi.fix_pathinfo选项，去掉注释;，然后将值设置为0:
+``` bash
+cgi.fix_pathinfo=0
+```
+启用php7.0-mcrypt
+``` bash
+$ sudo phpenmod mcrypt
+```
+重新启动php7.0-fpm
+```
+$ sudo systemctl restart php7.0-fpm
+```
+php7.0默认的用户及用户组是`www-data`,可以在`/etc/php/7.0/fpm/pool.d/www.conf`下查看。
 
 ## 安装mysql5.7
 ``` bash
@@ -57,4 +89,16 @@ mysql-client-5.7 - MySQL database client binaries
 $ sudo apt-get -y install mysql-server-5.7 mysql-client-5.7 # 安装mysql5.7服务器及客户端
 # 在安装过程中提示设置mysql的密码
 $ systemctl status mysql # 查看mysql状态 默认已启动
+```
+
+mysql 状态
+![mysql_status](/img/201803/ubuntu_lnmp/mysql_status.png)
+
+从上图中我们已经圈选出两处，`active(running)` 表示已经启动  `enabled`表示开机自启
+
+同样我们可以看到 php7.0-fpm, mysql, nginx 都是开机启动，现在我们关闭开机启动
+```
+$ sudo systemctl disable nginx
+$ sudo systemctl disable php7.0-fpm
+$ sudo systemctl disable mysql
 ```
