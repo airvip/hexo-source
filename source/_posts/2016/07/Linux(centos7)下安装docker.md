@@ -3,6 +3,7 @@ title: Linux(centos7)下安装docker
 date: 2016-07-26 17:38:13
 tags:
     - Docker
+    - Linux
     - Centos
 ---
 
