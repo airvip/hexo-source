@@ -75,8 +75,6 @@ FROM
   questions_log
 WHERE 
   FROM_UNIXTIME(create_time,'%Y-%m-%d') = '2017-12-25'
-GROUP BY 
-  t
 ORDER BY 
   t ;
 ```
