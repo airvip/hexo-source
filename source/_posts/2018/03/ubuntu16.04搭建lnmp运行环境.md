@@ -43,6 +43,9 @@ $ head /etc/nginx/nginx.conf # 第一行用户信息
 ``` bash
 $ vim /etc/nginx/nginx.conf # 改成www-data
 ```
+为什么设为`www-data`,是因为php7.0默认的用户及用户组是`www-data`，为了和下面统一。
+由于我这是开发本，所以我把用户设置为当前用户`airvip`
+
 重启nginx
 ```
 $ sudo systemctl restart nginx 
@@ -64,7 +67,7 @@ $ systemctl status php7.0-fpm # 查看php-fpm状态 默认已启动
 ``` bash
 $ sudo vim /etc/php/7.0/fpm/php.ini
 ```
-找到cgi.fix_pathinfo选项，去掉注释;，然后将值设置为0:
+找到cgi.fix_pathinfo选项，去掉注释`;`，然后将值设置为0,为了安全！
 ``` bash
 cgi.fix_pathinfo=0
 ```
@@ -77,6 +80,36 @@ $ sudo phpenmod mcrypt
 $ sudo systemctl restart php7.0-fpm
 ```
 php7.0默认的用户及用户组是`www-data`,可以在`/etc/php/7.0/fpm/pool.d/www.conf`下查看。
+
+由于我的是开发本我就将用户及用户修改为当前用户`airivp`,修改结果如下：
+![php www conf](/img/201803/ubuntu_lnmp/php_www_conf.png)
+
+## 搭配php与nginx
+修改nginx默认站点配置文件
+``` bash
+# 先将原有的默认配置文件备份（个人习惯）
+$ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_bak  
+$ sudo vim /etc/nginx/sites-available/default
+```
+修改结果如下
+![default](/img/201803/ubuntu_lnmp/default.png)
+
+修改完之后重启nginx
+
+编写`info.php`
+``` bash
+$ vim /var/www/html/info.php
+```
+写入如下内容
+``` bash
+<?php
+    phpinfo();
+?>
+```
+在浏览器访问`http://127.0.0.1/info.php`结果如下，说明配置成功！
+![phpinfo](/img/201803/ubuntu_lnmp/phpinfo.png)
+
+
 
 ## 安装mysql5.7
 ``` bash
@@ -91,7 +124,7 @@ $ sudo apt-get -y install mysql-server-5.7 mysql-client-5.7 # 安装mysql5.7服�
 $ systemctl status mysql # 查看mysql状态 默认已启动
 ```
 
-mysql 状态
+以查看 mysql 状态为例说明
 ![mysql_status](/img/201803/ubuntu_lnmp/mysql_status.png)
 
 从上图中我们已经圈选出两处，`active(running)` 表示已经启动  `enabled`表示开机自启
