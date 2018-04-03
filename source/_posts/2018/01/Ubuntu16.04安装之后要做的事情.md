@@ -180,7 +180,27 @@ $ sudo apt-get install python-pip # for python2
 
 17. 安装shutter截屏软件
 ``` bash
-$ sudo apt-get install shutter
+$ sudo apt-get -y install shutter
+```
+
+18. 安装curl
+``` bash
+$ sudo apt-get -y install curl
+```
+
+19. 安装composer,php的管理包
+``` bash
+$ curl -sS https://getcomposer.org/installer | php
+$ sudo mv composer.phar /usr/local/bin/composer
+# 安装完composer先使用国内镜像
+$ composer config -g repo.packagist composer https://packagist.phpcomposer.com
+```
+
+20. 安装redis数据库
+```
+$ sudo apt-get -y install redis-server
+$ redis-cli # 进入redis
+> config set requirepass 123456 # 设置密码
 ```
 
 
