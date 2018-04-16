@@ -35,19 +35,19 @@ history 可以非常方便的帮助我们快速定位之前的某些操作。
 
 ## history记录用户及时间
 
-如果只是针对本用户我们可以修改 `~/.bashrc` 在文件的末尾加上 `HISTTIMEFORMAT="`whoami` $F %T "` 这句话即可。
+如果只是针对本用户我们可以修改 `~/.bashrc` 在文件的末尾加上 HISTTIMEFORMAT="\`whoami\` $F %T "` 这句话即可。
 使其生效请执行`source ~/.bashrc`,这样免去重启电脑。
 查看 history
 ![history](/img/201802/history/history.png)
 
-针对本用户我们也可以修改 `~/.profile` 在文件的末尾加上 `export HISTTIMEFORMAT="`whoami` $F %T "` 这句话即可。
+针对本用户我们也可以修改 `~/.profile` 在文件的末尾加上 export HISTTIMEFORMAT="\`whoami\` $F %T " 这句话即可。
 使其生效请执行`source ~/.bashrc`,这样免去重启电脑。
 
 
-如果只是针对全局用户我们可以修改 `/etc/bash.bashrc` 在文件的末尾加上 `HISTTIMEFORMAT="`whoami` $F %T "` 这句话即可。
+如果只是针对全局用户我们可以修改 `/etc/bash.bashrc` 在文件的末尾加上 HISTTIMEFORMAT="\`whoami\` $F %T " 这句话即可。
 使其生效请执行`source /etc/bash.bashrc`，这样免去重启电脑。
 
-针对本用户我们也可以修改 `/etc/profile` 在文件的末尾加上 `export HISTTIMEFORMAT="`whoami` $F %T "` 这句话即可。
+针对本用户我们也可以修改 `/etc/profile` 在文件的末尾加上 export HISTTIMEFORMAT="\`whoami\` $F %T " 这句话即可。
 使其生效请执行`source /etc/profile`，这样免去重启电脑。
 
 ## history的几个命令
@@ -83,9 +83,9 @@ $ history -r
 ```
 
 * 保存历史列表(内存数据)到指定的历史文件(本地数据)
-··· bash
+``` bash
 $ history -w
-···
+```
 
 * 显示最近的 n 条命令(内存数据)
 ``` bash
