@@ -10,7 +10,7 @@ Laravel 是一套简洁、优雅的PHP Web开发框架(PHP Web Framework)。它�
 
 <!-- more -->
 
-## 安装环境
+# 安装环境
 安装laravel环境要求(来自官网)
 
 * PHP >= 5.5.9 // php版本要求大于等于5.5.9 ，我的是5.4.16也安装好了。。。。
@@ -29,7 +29,7 @@ Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 ```
 
-## 安装laravel
+# 安装laravel
 
 通过composer安装,使用 `composer create-project laravel/laravel 项目名称` 来创建项目
 ``` bash
@@ -87,7 +87,7 @@ Installing dependencies (including require-dev) from lock file
   - Installing phpunit/phpunit (4.5.0)
     Downloading: 100%  
 ```
-## 成功测试
+# 成功测试
 安装成功可以看到如下代码
 ``` bash
 Generating autoload files

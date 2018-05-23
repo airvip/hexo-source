@@ -15,7 +15,7 @@ Composer 不是一个包管理器。是的，它涉及 "packages" 和 "libraries
 
 composer就像node的npm， ruby的bundler，咱们php也不能落后啊! composer的作用就发挥出来了。当然，早年间 PHP 其实是有自己的包管理器的，叫 pear。不想多讲，知道pear很垃圾就好了。
 
-## Composer用途
+# Composer用途
 
 Composer 这样为你解决问题：
 1. 你有一个项目依赖于若干个库。
@@ -27,7 +27,7 @@ Composer 这样为你解决问题：
 
 话不多说，现在安装
 
-## Linux（CentOs7）下安装
+# Linux（CentOs7）下安装
 
 1、下载并执行 Installer
 ``` bash
@@ -59,7 +59,7 @@ Use it: php composer.phar
 You are already using composer version 1.1.0 (stable channel).
 ```
 
-## windows下安装
+# windows下安装
 
 使用安装程序，这是将 Composer 安装在你机器上的最简单的方法。
 

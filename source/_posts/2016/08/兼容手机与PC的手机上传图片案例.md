@@ -12,14 +12,14 @@ tags:
 
 <!-- more -->
 
-## 基础文件
+# 基础文件
 
 - hammer.js
 - iscroll-zoom.js
 - jquery.js
 - jquery-photoClip.js
 
-## 编程实现
+# 编程实现
 
 ``` Html
 <!DOCTYPE html>

@@ -14,7 +14,7 @@ tags:
 
 推荐大家使用[淘宝npm镜像](https://npm.taobao.org/)
 
-## 配置方法
+# 配置方法
 
 方法一：通过config命令配置
 ``` bash
@@ -43,7 +43,7 @@ registery=https://registry.npm.tabao.org
 ```
 使用哪种方法可根据自己需要以及爱好
 
-## cnpm 替换npm
+# cnpm 替换npm
 
 淘宝定制了cnpm命令行工具来替代原生npm
 ``` bash

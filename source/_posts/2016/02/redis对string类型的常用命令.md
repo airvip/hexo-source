@@ -11,7 +11,7 @@ tags:
 
 <!-- more -->
 
-## string 操作
+# string 操作
 
 进入redis数据库
 ```

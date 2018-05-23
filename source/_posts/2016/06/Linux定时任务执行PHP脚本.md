@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## 操作平台
+# 操作平台
 
 查看当前操作系统
 ``` bash
@@ -35,7 +35,7 @@ php: /usr/bin/php /usr/lib64/php /etc/php.d /etc/php.ini
 /usr/include/php /usr/share/php /usr/share/man/man1/php.1.gz
 ```
 
-## php文件
+# php文件
 
 php脚本所在位置`/root/clear.php`
 

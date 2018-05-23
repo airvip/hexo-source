@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## 错误详细
+# 错误详细
 
 **解压时报了如下的错误**
 ``` bash
@@ -46,7 +46,7 @@ unzip.x86_64                            6.0-15.el7                     base
 [root@localhost ~]# unzip bt12315.zip -d ./
 ```
 
-## unzip常用命令
+# unzip常用命令
 
 常用解压到当前目录
 ``` bash

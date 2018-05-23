@@ -20,8 +20,8 @@ PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理�
 ``` bash
 [root@localhost ~]# uname -a
 Linux localhost.localdomain 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
-[root@localhost ~]# cat /etc/redhat-release 
-CentOS Linux release 7.1.1503 (Core) 
+[root@localhost ~]# cat /etc/redhat-release
+CentOS Linux release 7.1.1503 (Core)
 ```
 
 # 安装开始
@@ -32,8 +32,8 @@ CentOS Linux release 7.1.1503 (Core)
 查看是否安装php
 [root@localhost ~]# yum list installed | grep php
 查看yum库有没有php
-[root@localhost ~]# yum list | grep php 
-php.x86_64                              5.4.16-36.el7_1                @base 
+[root@localhost ~]# yum list | grep php
+php.x86_64                              5.4.16-36.el7_1                @base
 ..............省略一堆代码.................
 开始安装
 [root@localhost ~]# yum -y install php
@@ -57,19 +57,19 @@ php.x86_64                              5.4.16-36.el7_1                @base
 [root@localhost conf]# cd /etc/httpd/conf.d
 [root@localhost conf.d]# vi php.conf
 # Cause the PHP interpreter to handle files with a .php extension.
-#<FilesMatch 正则表达式>和</FilesMatch>：文件名与正则表达式相匹配的文件，将适用这里设定的语句。   
-#SetHandler：强制所有匹配的文件使用指定handler进行处理。               
+#<FilesMatch 正则表达式>和</FilesMatch>：文件名与正则表达式相匹配的文件，将适用这里设定的语句。
+#SetHandler：强制所有匹配的文件使用指定handler进行处理。
 <FilesMatch \.php$>
     SetHandler application/x-httpd-php
 </FilesMatch>
 
 # Allow php to handle Multiviews
-#设定扩展名为.php的档案的类型为text/html     
+#设定扩展名为.php的档案的类型为text/html
 AddType text/html .php
 #
 # Add index.php to the list of files that will be served as directory
 # indexes.
-#默认网页档名增加index.php   
+#默认网页档名增加index.php
 DirectoryIndex index.php
 
 #
@@ -112,7 +112,7 @@ php.d
 php.ini
 [root@localhost etc]# vi php.ini
 ;假设该web服务器是用于生产环境的，将下面的这些设定值改成这样（或确认这些设定值是这样的）
-;PHP可用的最大内存。可按照需要进行调整 
+;PHP可用的最大内存。可按照需要进行调整
 memory_limit = 128M
 ;设定PHP会告知的错误或信息类型
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
@@ -159,6 +159,5 @@ code如下所示
 保存之后在物理机（自己的主机）测试，看到如下界面
 
 ![test](/img/201601/php/test.jpg)
-
 
 测试完后，这个页面里面的信息还挺重要的，<span style="color:red">推荐把phpinfo.php这个文件删除</span>。

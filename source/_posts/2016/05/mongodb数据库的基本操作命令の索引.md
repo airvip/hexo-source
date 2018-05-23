@@ -11,7 +11,7 @@ tags:
 
 <!-- more -->
 
-## 查看索引
+# 查看索引
 ``` bash
 > db.bg_user.getIndexes()
 [ ]
@@ -33,9 +33,9 @@ _id索引是绝大多数集合默认建立的索引
 	}
 ]
 ```
-## 创建索引
+# 创建索引
 
-### 单/多键索引
+## 单/多键索引
 创键单键索引(1正序；-1倒序)
 单键索引：值为一个单一的值，例如：字符串，数字或者日期
 ``` bash
@@ -56,7 +56,7 @@ _id索引是绝大多数集合默认建立的索引
 WriteResult({ "nInserted" : 1 })
 ```
 
-### 复合索引
+## 复合索引
 对于用户表，name&pass同时建立索引
 ``` bash
 > db.bg_user.insert({name:'wzb',pass:'123456',addr:'shandong'})
@@ -73,7 +73,7 @@ WriteResult({ "nInserted" : 1 })
 }
 ```
 
-### 过期索引（ttl索引）
+## 过期索引（ttl索引）
 过期索引（ttl索引）:一段时间后过期的索引。索引过期后，相应数据会被删除。（适合：用户登录信息，存储日志）
 ``` bash
 > db.bg_loginlog.ensureIndex({time:1},{expireAfterSeconds:10})
@@ -103,7 +103,7 @@ WriteResult({ "nInserted" : 1 })
 4. 删除时间不是精确的（删除过程是由后台程序每60秒跑一次，而且删除也需要一些时间，所以存在误差）
 
 <br/>
-### 全文索引
+## 全文索引
 创建全文索引
 ``` bash
 db.bg_blog.ensureIndex({key:"text"})

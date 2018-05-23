@@ -11,7 +11,7 @@ tags:
 
 <!-- more -->
 
-## 帮助命令
+# 帮助命令
 
 使用帮助命令
 ``` bash
@@ -25,7 +25,7 @@ db address can be:
 ................省略..................
 ```
 
-## 连接操作
+# 连接操作
 连接mongodb数据库
 ``` bash
 [root@localhost ~]# mongo 127.0.0.1:27017
@@ -38,7 +38,7 @@ local  0.078GB
 switched to db blog
 ```
 
-## 新增
+# 新增
 插入数据
 ``` bash
 > db.blog_collection.insert({x:1})
@@ -47,7 +47,7 @@ WriteResult({ "nInserted" : 1 })
 WriteResult({ "nInserted" : 1 })
 ```
 
-## 查看
+# 查看
 查看集合
 ``` bash
 > show collections
@@ -74,7 +74,7 @@ system.indexes
 9
 ```
 
-## 修改
+# 修改
 更新数据
 ``` bash
 > db.blog_collection.update({x:2},{x:22})
@@ -123,7 +123,7 @@ WriteResult({ "nMatched" : 2, "nUpserted" : 0, "nModified" : 2 })
 { "_id" : ObjectId("5749d0ff74e4bff8d390719d"), "a" : 2 }
 ```
 
-## 删除
+# 删除
 删除数据
 ``` bash
 //不允许不传参数，与update不同默认删除查到的所有数据

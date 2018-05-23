@@ -12,7 +12,7 @@ laravel初学者之路将由laravel5及之后的版本作为学习目标，这�
 
 <!-- more -->
 
-## 学习笔记
+# 学习笔记
 
 定义显示注册页面路由
 ``` php
@@ -77,7 +77,7 @@ D:\>cd download/apache/htdocs/self>php artisan make:model User
       <div class="collapse navbar-collapse" id="navbar">
          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown" id="web-user">
-               <a href="###" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+               <a href="##" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-user"></span>会员<span class="caret"></span>
                </a>
                <ul class="dropdown-menu">

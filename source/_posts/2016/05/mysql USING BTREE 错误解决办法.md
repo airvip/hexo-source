@@ -9,7 +9,7 @@ tags:
 
 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USING BTREE) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
 
-## Btree Error
+# Btree Error
 
 b-tree 是mysql 索引默认使用的数据结构。
 

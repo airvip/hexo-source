@@ -13,7 +13,7 @@ PHP Fatal error: Uncaught exception 'RedisException' with message 'Redis server 
 
 <!-- more -->
 
-## 错误调试
+# 错误调试
 
 做测试时，在命令行可以正常运行，在Apache下以网页形式访问时则出错，在访问 Redis 以及之后的代码均不再执行。查看 Apache 的日志：`/var/log/httpd/error_log`，发现代码运行时出现异常：
 ``` bash
@@ -27,7 +27,7 @@ ini_set(‘default_socket_timeout’, -1);
 ```
 经过测试好像并没起什么作用，这行代码只是设置 php 的 sokcet 连接永不超时。
 
-## selinux
+# selinux
 
 关于 selinux :大部分使用 SELinux 的人使用的都是 SELinux 就绪的发行版。
 例如：Fedora、RedHatEnterpriseLinux(RHEL）、Debian或Centos。

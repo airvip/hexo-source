@@ -11,13 +11,13 @@ Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js �
 
 <!-- more -->
 
-## windows下安装
+# windows下安装
 
 [直接去官网下载msi软件包，下一步下一步安装就好](https://nodejs.org/en/download/)
 
 **警告**：安装完了你不要删除这个msi软件包，在你卸载或者升级的时候自然会用到
 
-## Linux(centos7)下安装
+# Linux(centos7)下安装
 
 方式一：采用yum安装
 

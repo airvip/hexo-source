@@ -15,10 +15,10 @@ SweetAlert是一款不需要jQuery支持的原生js提示框,风格类似bootstr
 
 [在Github上下载SweetAlert](https://github.com/t4t5/sweetalert)
 
-## 效果对比
+# 效果对比
 ![bj](/img/201604/sweetalert/bj.png)
 
-## 基础使用
+# 基础使用
 
 引入 sweetalert
 <script src="your_path/sweetalert.min.js"></script>

@@ -12,11 +12,11 @@ tags:
 
 <!-- more -->
 
-## 问题
+# 问题
 
 在 win7 上安装了 mysql-5.6.10.msi 之后，发现并没有注册服务，致使无法启动 mysql，问题很简单，在这里记录一下解决方法。
 
-## 解决
+# 解决
 
 在cmd中，进入自己的mysql安装目录下的bin目录，里面有一个mysqld.exe，执行mysqld.exe install即可。
 
@@ -38,7 +38,7 @@ C:\Windows\System32\cmd.exe
 
 4. 在 cmd 中进入 mysql 安装目录的 bin 目录，执行 `mysql.exe install` 即可
 
-## 设置root密码
+# 设置root密码
 
 由于 mysql5.6 的 root 密码默认为空，所以先给 root 设置密码 
 

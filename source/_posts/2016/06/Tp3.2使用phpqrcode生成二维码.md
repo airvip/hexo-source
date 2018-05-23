@@ -12,14 +12,14 @@ tags:
 
 <!-- more -->
 
-## 添加扩展
+# 添加扩展
 
 1、下载 phpqrcode 类包，[点击在 github 上下载](https://github.com/t0k4rt/phpqrcode)
 
 2、将类包全部放入thinkPHP的vendor，如图
 ![thinkphp vendor](/img/201606/phpcode/phpvendor.jpg)
 
-## 编程实现
+# 编程实现
 
 在控制器里新建了一个QrCodeController.class.php控制器文件
 
@@ -165,6 +165,6 @@ Js 提交请求代码如下
 </script>
 ```
 
-## 效果图
+# 效果图
 最终效果图
 ![result](/img/201606/phpcode/result.jpg)

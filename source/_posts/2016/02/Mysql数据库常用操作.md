@@ -11,7 +11,7 @@ mysql数据库是一款流行的关系型数据库，在此记录一下常用命
 
 <!-- more -->
 
-## 导入导出
+# 导入导出
 
 导出整个数据库
 ```
@@ -28,7 +28,7 @@ D:\download>mysql\bin\mysqldump -uroot -p `db_name` `tab1_name` `tab2_name`>e:/w
 mysql> source C:\Users\wzb\Desktop\airblog.sql
 ```
 
-## 库操作
+# 库操作
 
 创建数据库
 ```
@@ -61,7 +61,7 @@ mysql>show variables like 'character_set%';
 mysql>use `php_one`;
 ```
 
-## 表操作
+# 表操作
 
 创建表
 ```
@@ -83,7 +83,7 @@ COMMENT = '后台管理员';
 mysql>show tables;
 ```
 
-## 表数据的增删改查
+# 表数据的增删改查
 
 插入数据
 ```

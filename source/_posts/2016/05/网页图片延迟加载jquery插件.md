@@ -11,7 +11,7 @@ jQuery Lazy Load 基于 jQuery 的图片延迟加载插件，在用户滚动页�
 
 <!-- more -->
 
-## 安装
+# 安装
 
 1、前往 gitHub 直接下载使用，[下载地址](https://github.com/tuupola/jquery_lazyload/)
 
@@ -21,7 +21,7 @@ $ yarn add lazyload # 使用 yarn 安装
 $ npm install lazyload # 使用 npm 安装
 ```
 
-## 基础使用
+# 基础使用
 
 1、将代码引入自己的项目
 ``` html

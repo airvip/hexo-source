@@ -11,7 +11,7 @@ tags:
 
 <!-- more -->
 
-## 页面跳转
+# 页面跳转
 
 top.location的方式
 ``` Js

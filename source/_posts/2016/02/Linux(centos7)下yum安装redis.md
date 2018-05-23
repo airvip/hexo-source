@@ -14,7 +14,7 @@ Redis是一个开源的使用ANSI C语言编写、支持网络、可基于内存
 
 EPEL 是yum的一个软件源,里面包含了许多基本源里没有的软件。epel是社区强烈打造的免费开源发行软件包版本库，系统包含大概有1万多个软件包，163和sohu的镜像是没有这么多软件了.
 
-## 添加源并安装
+# 添加源并安装
 ```
 [root@localhost ~]# yum install epel-release
 ```
@@ -38,7 +38,7 @@ redis.x86_64                            2.8.19-2.el7                   epel
 安装完可以使用`rpm -ql redis`查看安装的位置
 
 
-## 管理redis
+# 管理redis
 
 启动redis服务
 ```
@@ -76,7 +76,7 @@ ln -s '/usr/lib/systemd/system/redis.service' '/etc/systemd/system/multi-user.ta
 ```
 至此yum安装已经结束
 
-## 编译安装
+# 编译安装
 
 截至2016/02/08，最新稳定版为3.2.0
 ```

@@ -12,7 +12,7 @@ phpredis是php的一个扩展，效率是相当高有链表排序功能，对创
 
 <!-- more -->
 
-## 下载安装
+# 下载安装
 1、下载phpredis扩展
 
 可以前往github下载 传送门：[点击进入github下载](https://github.com/owlient/phpredis)
@@ -91,7 +91,7 @@ Don't forget to run 'make test'.
 Installing shared extensions:     /usr/lib64/php/modules/
 ```
 
-## 配置
+# 配置
 
 7、编辑php.ini文件，添加如下代码
 ``` bash
@@ -117,7 +117,7 @@ Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 ```
 
-## 测试
+# 测试
 
 8、测试
 ``` bash

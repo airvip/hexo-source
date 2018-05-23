@@ -11,12 +11,12 @@ tags:
 
 <!-- more -->
 
-## 异常情况
+# 异常情况
 
 安装完Mysql之后，通过DOS窗口输入net start mysql时，却提示服务名无效，结果如下
 ![服务名无效](/img/201608/mysql56/noserver.jpg)
 
-## 解决流程
+# 解决流程
 
 明明安装了 mysql,难道没有安装服务？
 那就查看一下系统服务，先按 `windows键+R键`,输入`services.msc`

@@ -15,7 +15,7 @@ SELinux是「Security-Enhanced Linux」的简称，是美国国家安全局「NS
 
 相关链接 [更详细的selinux介绍（全英文）](http://selinuxproject.org/page/Main_Page)
 
-## SELinux 基本操作
+# SELinux 基本操作
 
 查看SElinux 的状态
 ``` bash

@@ -13,12 +13,12 @@ Vagrant 是一个基于 Ruby 的工具，用于创建和部署虚拟化开发环
 
 Vagrant is a tool for building complete development environments.
 
-## 准备工作
+# 准备工作
 
 开发电脑系统环境：Windows 7 专业版
 [下载 Vgrant](https://www.vagrantup.com/downloads.html)
 
-## 安装流程
+# 安装流程
 
 1. 开始安装，找到下载的位置，双击安装软件（按红线步骤安装）
 ![开始安装](/img/201604/vgrant_install/vgrant01.jpg)

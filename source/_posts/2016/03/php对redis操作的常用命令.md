@@ -12,7 +12,7 @@ redis支持列表、集合、有序集合、散列数据等多种类型，通过
 
 <!-- more -->
 
-## 链接操作
+# 链接操作
 
 1、Redis::__construct构造函数
 ``` bash
@@ -30,7 +30,7 @@ timeout: float,链接时长 (可选, 默认为 0 ，不限链接时间)
 
 **注**: 在redis.conf中也有时间，默认为300，pconnect, popen 不会主动关闭的永久链接
 
-## 基础操作
+# 基础操作
 
 * setOption 设置redis模式
 * getOption 查看redis设置的模式
@@ -118,7 +118,7 @@ $redis->lRem('key1', 'A', 2);
 $redis->lRange('key1', 0, -1);
 ```
 
-## list 操作
+# list 操作
 
 lPush 在名称为key的list左边（头）添加一个值为value的 元素
 ``` bash
@@ -206,7 +206,7 @@ array(1) { [0]=> string(3) "def" }
 array(3) { [0]=> string(3) "abc" [1]=> string(3) "456" [2]=> string(3) "123" }
 ```
 
-## SET操作相关
+# SET操作相关
 
 sAdd  向名称为key的set中添加元素value,如果value存在，不写入，return false
 ``` bash
@@ -278,7 +278,7 @@ var_dump($redis->sort('s', array('sort' => 'desc'))); // 5,4,3,2,1
 var_dump($redis->sort('s', array('sort' => 'desc', 'store' => 'out'))); // (int)5
 ```
 
-## string命令
+# string命令
 
 getSet  返回原来key中的值，并将value写入key
 ``` bash
@@ -315,7 +315,7 @@ $redis->strlen('key');
 
 * getBit/setBit  返回2进制信息
 
-## zset（sorted set）相关操作
+# zset（sorted set）相关操作
 
 zAdd(key, score, member)：向名称为key的zset中添加元素member，score用于排序。如果该元素已经存在，则根据score更新该元素的顺序。
 ``` bash
@@ -394,7 +394,7 @@ aggregateFunction Either "SUM", "MIN", or "MAX": defines the behaviour to use on
 
 对N个zset求并集和交集，并将最后的集合保存在dstkeyN中。对于集合中每一个元素的score，在进行AGGREGATE运算前，都要乘以对于的WEIGHT参数。如果没有提供WEIGHT，默认为1。默认的AGGREGATE是SUM，即结果集合中元素的score是所有集合对应元素进行SUM运算的值，而MIN和MAX是指，结果集合中元素的score是所有集合对应元素中最小值和最大值。
 
-## Hash 操作
+# Hash 操作
 
 hSet  向名称为h的hash中添加元素key1—>hello
 ``` bash
@@ -451,7 +451,7 @@ hMGet  返回名称为h的hash中field1,field2对应的value
 $redis->hmGet('h', array('field1', 'field2'));
 ```
 
-## redis 相关操作
+# redis 相关操作
 
 * flushDB  清空当前数据库
 * flushAll  清空所有数据库

@@ -13,7 +13,7 @@ tags:
 
 <!-- more -->
 
-## 操作环境
+# 操作环境
 
 先查看当前的操作环境
 ``` bash
@@ -24,7 +24,7 @@ SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 CentOS Linux release 7.1.1503 (Core) 
 ```
 
-## 安装Mongodb
+# 安装Mongodb
 
 查看是否安装mongodb
 ``` bash
@@ -71,7 +71,7 @@ Welcome to the MongoDB shell.
 .....
 ```
 
-## 相关操作
+# 相关操作
 
 查看 mongo 进程
 ``` bash

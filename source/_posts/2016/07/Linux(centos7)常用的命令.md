@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## 常用命令
+# 常用命令
 
 1、添加用户
 ``` bash
@@ -82,7 +82,7 @@ root     pts/0        2016-07-06 07:40 (10.0.2.2)
 ``` bash
 [root@localhost ~]# visudo
 接着输入[:set nu]vi编辑器就会显示行号
-100 ##关机
+100 #关机
 101 Cmnd_Alias SHUTDOWN = /sbin/halt, /sbin/shutdown, 
 /sbin/poweroff, /sbin/reboot, /sbin/init
 102 
@@ -92,7 +92,7 @@ root     pts/0        2016-07-06 07:40 (10.0.2.2)
 :wq
 ```
 
-## 时间修改
+# 时间修改
 linux系统时钟有两个，一个是硬件时钟，即BIOS时间，就是我们进行CMOS设置时看到的时间，另一个是系统时钟，是linux系统Kernel时间。当Linux启动时，系统Kernel会去读取硬件时钟的设置，然后系统时钟就会独立于硬件运作。有时我们会发现系统时钟和硬件时钟不一致，因此需要执行时间同步，下面就分享一下时间设置及时钟同步的命令使用方法
 
 1、修改系统硬件时钟

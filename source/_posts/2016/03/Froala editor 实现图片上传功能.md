@@ -12,7 +12,7 @@ Froala 是个采用 HTML5 开发的 WYSIWYG 编辑器，在该案例中我们将
 
 <!-- more -->
 
-## 下载软件包
+# 下载软件包
 
 方式一：
 [前往github下载安装包](https://github.com/froala/wysiwyg-editor)
@@ -20,7 +20,7 @@ Froala 是个采用 HTML5 开发的 WYSIWYG 编辑器，在该案例中我们将
 [前往官网下载安装包](https://www.froala.com/wysiwyg-editor)
 
 
-## 编写html代码
+# 编写html代码
 [查看更多 Froala 编辑器参数配置](https://www.froala.com/wysiwyg-editor/docs/options)
 
 ``` html
@@ -136,7 +136,7 @@ Froala 是个采用 HTML5 开发的 WYSIWYG 编辑器，在该案例中我们将
 </html>
 ```
 
-## php处理上传图片
+# php处理上传图片
 ``` php
 <?php
 // 允许上传的后缀名.
@@ -168,7 +168,7 @@ if ((($mime == "image/gif")||($mime == "image/jpeg")||($mime == "image/pjpeg")||
 }
 ```
 
-## 测试结果
+# 测试结果
 ![测试结果](/img/201603/froala/result.jpg)
 
 [demo代码已经更新到github,点击查看](https://github.com/airvip/edit_demo)
