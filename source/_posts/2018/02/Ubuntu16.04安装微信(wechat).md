@@ -13,7 +13,7 @@ tags:
 <!-- more -->
 
 
-## electronic-wechat
+# electronic-wechat
 
 由于鹅厂一贯的作风，电脑端软件只针对 Windows 与 Mac 做开发，冷落了我们的大 Linux，于是社区发布了 Electronic WeChat 开源项目，这是一个社区发布的产品, 而不是官方微信团队发布的产品。
 
@@ -26,9 +26,9 @@ electronic-wechat 微信客户端到目前为止已升级 Electron 至 V1.4.15�
 Electron 提供了丰富的本地(操作系统)的 API ,使你能够使用纯 JavaScript 来创建桌面应用程序, 支持 Mac, Linux, Windows 可谓是全平台, 项目使用 MIT 许可。
 
 
-## 安装 & 使用
+# 安装 & 使用
 
-### 源码编译安装
+## 源码编译安装
 
 需要依赖 git node npm,如果电脑上没有请提前安装，可以查看 《Ubuntu16.04安装之后要做的事情》 这篇博客。
 
@@ -55,7 +55,7 @@ $ npm run build:win32
 $ npm run build:win64
 ```
 
-### 使用二进制包安装
+## 使用二进制包安装
 
 下载最新的发行包
 ``` bash

@@ -12,7 +12,7 @@ Nginx 作为 web server 的服务。因业务需要在访问网站时，需要�
 
 <!-- more -->
 
-## 安装平台
+# 安装平台
 
 查看系统信息
 ``` bash
@@ -23,7 +23,7 @@ $ cat /etc/redhat-release
 CentOS Linux release 7.3.1611 (Core)
 ```
 
-## 安装 httpd 服务
+# 安装 httpd 服务
 
 查看系统是否安装 httpd
 ``` bash
@@ -35,7 +35,7 @@ $ yum list installed | grep httpd
 $ yum -y install httpd
 ```
 
-## 配置认证
+# 配置认证
 
 使用 htpasswd 命令创建认证信息文件
 ``` bash

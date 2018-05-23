@@ -13,7 +13,7 @@ tags:
 
 系统中带了一堆我们用不到的软件，Linux 系统的好处就是系统是你自己的，想怎么配置看自己心情。
 
-## 删除操作
+# 删除操作
 
 1. 删除Amazon的链接
 ``` bash
@@ -62,7 +62,7 @@ $ sudo apt-remove -y remove gnome-system-log # 系统日志
 
 这样我们的 Ubuntu 系统基本已经干净了。
 
-## 安装操作
+# 安装操作
 
 1. 安装Vim
 ``` bash

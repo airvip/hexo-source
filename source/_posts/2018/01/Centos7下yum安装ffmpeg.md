@@ -15,7 +15,7 @@ tags:
 
 ffmpeg 是目前最主要的网站服务器后台转码程序。由于默认的 CentOS 的软件仓库里没有FFmpeg、FFmpeg-PHP，所以安装第三方的软件仓库。
 
-## 安装平台
+# 安装平台
 
 查看系统信息
 ``` bash
@@ -26,14 +26,14 @@ $ cat /etc/redhat-release
 CentOS Linux release 7.3.1611 (Core)
 ```
 
-## 进行安装
+# 进行安装
 
-### 安装准备
+## 安装准备
 1. ffmpeg 
 2. ffmpeg-devel 
 3. ffmpeg-php 
 
-### 安装repolist源
+## 安装repolist源
 查看安装 ffmpeg
 ``` bash
 $ yum list installed | grep ffmpeg
@@ -57,7 +57,7 @@ sudo rpm –import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 $ yum repolist 
 ```
 
-### 安装 Nux-Dextop 源
+## 安装 Nux-Dextop 源
 ``` bash
 $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
 ```
@@ -72,7 +72,7 @@ $ sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
 $ yum repolist 
 ```
 
-## 安装 ff 与 ff-dev
+# 安装 ff 与 ff-dev
 
 ``` bash
 $ yum list | grep ffmpeg #查看 yum 源中有没有 ffmpeg 包
@@ -87,7 +87,7 @@ $ yum install -y ffmpeg ffmpeg-devel
 $ ffmpeg -version
 ```
 
-## 安装ffmpeg-php
+# 安装ffmpeg-php
 安装 ffmpeg-php扩展，目前有几种方法，直接下载包解压 或者 用git克隆文件。
 直接下载包
 ``` bash
@@ -120,7 +120,7 @@ $ sudo vim /usr/local/php7/etc/php.ini # 编辑 php.ini ，加入 extension=ffmp
 $ sudo service php-fpm restart 
 ```
 
-## 常见问题
+# 常见问题
 在执行 `./configure --with-php-config=/usr/local/php7/bin/php-config` 遇到
 `configure: error: ffmpeg headers not found. Make sure ffmpeg is compiled as shared libraries using the --enable-shared option`
 解决:
@@ -160,7 +160,7 @@ sudo vim /usr/local/php7/etc/php.ini
 disable_functions = passthru,exec,system,chroot,chgrp,chown,proc_get_status,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server,fsocket,popen
 ```
 
-## 重要说明
+# 重要说明
 由于Nux Dextop仓库可能会与其他第三方库有冲突，比如（Repoforge和ATrpms）。所以，建议默认情况下不启用 Nux Dextop 仓库。
 
 打开`/etc/yum.repos.d/nux-dextop.repo`，将"enabled=1" 修改为 "enabled=0"。

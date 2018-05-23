@@ -12,7 +12,7 @@ history 这是我们在终端下操作 linux 服务器时经常使用的命令�
 
 <!-- more -->
 
-## history的介绍
+# history的介绍
 history 时 shell 的内置命令，我们可以通过 man 命令快速查看其帮助文档。
 history 是显示在终端下输入并执行的命令，系统默认保留 1000 条，如果你认为不够，也可以自行修改。
 history 可以非常方便的帮助我们快速定位之前的某些操作。
@@ -33,7 +33,7 @@ history 可以非常方便的帮助我们快速定位之前的某些操作。
   4. erasedups:    删除重复命令
 
 
-## history记录用户及时间
+# history记录用户及时间
 
 如果只是针对本用户我们可以修改 `~/.bashrc` 在文件的末尾加上 HISTTIMEFORMAT="\`whoami\` $F %T "` 这句话即可。
 使其生效请执行`source ~/.bashrc`,这样免去重启电脑。
@@ -50,7 +50,7 @@ history 可以非常方便的帮助我们快速定位之前的某些操作。
 针对本用户我们也可以修改 `/etc/profile` 在文件的末尾加上 export HISTTIMEFORMAT="\`whoami\` $F %T " 这句话即可。
 使其生效请执行`source /etc/profile`，这样免去重启电脑。
 
-## history的几个命令
+# history的几个命令
 
 * 查看本次会话执行的命令历史(内存数据)
 ``` bash

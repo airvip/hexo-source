@@ -18,7 +18,7 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 
 作为开发人员，在我们开发中使用 redis 是提高性能非常重要的一节。
 
-## 下载安装
+# 下载安装
 
 先通过以下方式直接下载安装包
 [中文官网下载](http://www.redis.net.cn/)
@@ -33,7 +33,7 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 停止服务：redis-server --service-stop
 ![redis_use](/img/201804/redis-php/redis_use.png)
 
-## 安装php-redis扩展
+# 安装php-redis扩展
 
 1、使用 phpinfo() 函数查看PHP的版本信息，这会决定扩展文件版本。
 ![phpinfo](/img/201804/redis-php/phpinfo.png)

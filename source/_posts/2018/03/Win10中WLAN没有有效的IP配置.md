@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## 解决流程
+# 解决流程
 
 1、在开始菜单上单击鼠标右键，选择“命令提示符（管理员）”，如果没有，通过 cortana 搜索 cmd,右键以管理员身份运行，还可以进入C:\Windows\System32，找到cmd.exe，右键管理员身份打开;
 ![cmd find](/img/201803/wlan/cmd.jpg)

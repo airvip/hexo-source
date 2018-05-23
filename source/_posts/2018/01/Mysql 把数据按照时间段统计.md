@@ -11,14 +11,14 @@ tags:
 
 <!-- more -->
 
-## 表的数据结构
+# 表的数据结构
 ![统计数据表内容](/img/201801/mysqltable/sqltable01.png)
 
 说明：
 create_time 与 update_time 为 int 类型
 表名：question_log
 
-## 常用SQL统计
+# 常用SQL统计
 
 按年统计
 ``` bash
@@ -79,7 +79,7 @@ ORDER BY
   t ;
 ```
 
-## 所用相关函数说明
+# 所用相关函数说明
 
 floor()：函数只返回整数部分，小数部分舍弃。（向下取整）
 ``` bash

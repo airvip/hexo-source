@@ -11,7 +11,7 @@ n 是 Node 的一个模块，作者是TJ Holowaychuk（鼎鼎大名的 Express �
 
 <!-- more -->
 
-## n 模块安装
+# n 模块安装
 
 ``` bash
 $ npm install n -g  # 全局安装n管理器
@@ -27,19 +27,19 @@ n
     node/9.10.1
 ```
 
-### 帮助命令
+## 帮助命令
 ``` bash
 $ n --help
 $ n -h
 ```
 
-### 查看node版本
+## 查看node版本
 ``` bash
 $ n list
 $ n ls
 ```
 
-### 安装node其他版本
+## 安装node其他版本
 例如安装node 6.10.0,记住安装完之后 node 默认切换到该版本
   ```
   $ sudo n 6.10.0
@@ -52,17 +52,17 @@ $ n ls
   $ n lts # 安装node最新长支持发行版本
   ```
 
-### 删除node某个版本
+## 删除node某个版本
 ``` bash
 $ n rm 4.1.0
 ```
 
-### 制定版本运行脚本
+## 制定版本运行脚本
 ``` bash
 $ n use 6.10.0 test.js
 ```
 
-### 查看n版本
+## 查看n版本
 ``` bash
 $ n -V
 $ n --version

@@ -13,7 +13,7 @@ tags:
 
 <!-- more -->
 
-## 操作环境
+# 操作环境
 ``` bash
 $ uname -a # 系统版本
 Linux airvip-ubuntu 4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
@@ -23,7 +23,7 @@ $ redis-cli --version # redis客户端版本
 redis-cli 3.0.6
 ```
 
-## 安装方式
+# 安装方式
 
 redis安装方式
 ``` bash
@@ -50,7 +50,7 @@ Removed symlink /etc/systemd/system/redis.service.
 $ sudo ln -s /lib/systemd/system/redis-server.service /etc/systemd/system/redis.service
 ```
 
-## systemctl管理redis-server
+# systemctl管理redis-server
 在老一点的 linux 版本中用 service 来管理服务的时候，是在 `/etc/init.d/` 目录中创建一个脚本文件，来管理服务的启动和停止，其实用 systemctl 来管理也类似，只是文件目录有所不同，在 `/lib/systemd/system` 下。
 
 `/lib/systemd/system/redis-server.service` 文件内容如下

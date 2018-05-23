@@ -22,7 +22,7 @@ Linux airvip-ubuntu 4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 
 3. mysql 5.7.21
 ```
 
-## 安装nginx
+# 安装nginx
 ``` bash
 $ sudo apt-cache search nginx  # 搜索nginx安装包
 nginx - small, powerful, scalable web/proxy server
@@ -34,7 +34,7 @@ $ systemctl status nginx # 查看nginx状态 默认已启动
 $ nginx -v # 查看nginx版本
 nginx version: nginx/1.10.3 (Ubuntu)
 ```
-## 配置nginx
+# 配置nginx
 nginx默认的用户是`www-data`,可以在`/etc/nginx/nginx.conf`下查看。
 ``` bash
 $ head /etc/nginx/nginx.conf # 第一行用户信息
@@ -52,7 +52,7 @@ $ sudo systemctl restart nginx
 ```
 
 
-## 安装php7.0
+# 安装php7.0
 ``` bash
 $ sudo apt-cache search php7.* # 搜索php7安装包
 php7.0 - server-side, HTML-embedded scripting language (metapackage)
@@ -62,7 +62,7 @@ $ sudo apt-get -y install php7.0-fpm php7.0-mysql php7.0-common php7.0-curl php7
 $ systemctl status php7.0-fpm # 查看php-fpm状态 默认已启动
 ```
 
-## 配置php7.0
+# 配置php7.0
 打开php.ini配置文件
 ``` bash
 $ sudo vim /etc/php/7.0/fpm/php.ini
@@ -84,7 +84,7 @@ php7.0默认的用户及用户组是`www-data`,可以在`/etc/php/7.0/fpm/pool.d
 由于我的是开发本我就将用户及用户修改为当前用户`airivp`,修改结果如下：
 ![php www conf](/img/201803/ubuntu_lnmp/php_www_conf.png)
 
-## 搭配php与nginx
+# 搭配php与nginx
 修改nginx默认站点配置文件
 ``` bash
 # 先将原有的默认配置文件备份（个人习惯）
@@ -111,7 +111,7 @@ $ vim /var/www/html/info.php
 
 
 
-## 安装mysql5.7
+# 安装mysql5.7
 ``` bash
 $ sudo apt-cache search mysql-server-5.* # 搜索mysql5服务端安装包
 mysql-server - MySQL database server (metapackage depending on the latest version)

@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## 问题编码
+# 问题编码
 
 ``` html
 <!DOCTYPE html>
@@ -50,7 +50,7 @@ tags:
 效果图
 ![error style](/img/201805/htmlstyle/errorstyle.png)
 
-## box-sizing语法
+# box-sizing语法
 
 `box-sizing: content-box|border-box|inherit;`
 
@@ -66,7 +66,7 @@ border-box
 inherit
 规定应从父元素继承 box-sizing 属性的值。
 
-## 修改编码
+# 修改编码
 
 ``` html
 <!DOCTYPE html>
