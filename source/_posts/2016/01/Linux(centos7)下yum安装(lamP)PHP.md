@@ -13,20 +13,22 @@ PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理�
 
 <!-- more -->
 
-## 操作环境
+# 操作环境
 
 当前操作系统环境
-```
+
+``` bash
 [root@localhost ~]# uname -a
 Linux localhost.localdomain 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 [root@localhost ~]# cat /etc/redhat-release 
 CentOS Linux release 7.1.1503 (Core) 
 ```
 
-## 安装开始
+# 安装开始
 
 安装php
-```
+
+``` bash
 查看是否安装php
 [root@localhost ~]# yum list installed | grep php
 查看yum库有没有php
@@ -36,20 +38,22 @@ php.x86_64                              5.4.16-36.el7_1                @base
 开始安装
 [root@localhost ~]# yum -y install php
 ```
+
 ![php_install](/img/201601/php/php_install.jpg)
 
 如图所示，安装的PHP版本为5.4.16。
 
 说明    <span style="color:red">安装完成后</span>
 
-  * PHP会生成配置文件/etc/httpd/conf.d/php.conf，因为该配置文件在/etc/httpd/conf.d目录下，所以它会被Apache所读取。
-  * PHP还会生成配置文件/etc/httpd/conf.modules.d/10-php.conf，该配置文件也会被   Apache所读取，它的设定让Apache可以加载PHP模块。
-  * PHP软件本身的配置文件其实是/etc/php.ini。
+* PHP会生成配置文件/etc/httpd/conf.d/php.conf，因为该配置文件在/etc/httpd/conf.d目录下，所以它会被Apache所读取。
+* PHP还会生成配置文件/etc/httpd/conf.modules.d/10-php.conf，该配置文件也会被   Apache所读取，它的设定让Apache可以加载PHP模块。
+* PHP软件本身的配置文件其实是/etc/php.ini。
 
-## 相关配置文件
+# 相关配置文件
 
 介绍配置文件/etc/httpd/conf.d/php.conf
-```
+
+``` bash
 [root@localhost conf]# cd /etc/httpd/conf.d
 [root@localhost conf.d]# vi php.conf
 # Cause the PHP interpreter to handle files with a .php extension.
@@ -85,7 +89,8 @@ php_value session.save_path    "/var/lib/php/session"
 ```
 
 介绍配置文件/etc/httpd/conf.modules.d/10-php.conf：
-```
+
+``` bash
 [root@localhost conf.modules.d]# cd /etc/httpd/conf.modules.d/
 [root@localhost conf.modules.d]# vi 10-php.conf
 # PHP is an HTML-embedded scripting language which attempts to make it
@@ -99,7 +104,8 @@ php_value session.save_path    "/var/lib/php/session"
 介绍配置文件/etc/php.ini。
 
 在该文件的开头处，有说明针对生产环境和开发环境，有一些设定值可以进行修改，以提高PHP的效能。
-```
+
+``` bash
 [root@localhost etc]# cd /etc
 [root@localhost etc]# ls | grep php
 php.d
@@ -110,9 +116,9 @@ php.ini
 memory_limit = 128M
 ;设定PHP会告知的错误或信息类型
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
-;当发生错误时，不将错误信息显示出来(到浏览器上)     
+;当发生错误时，不将错误信息显示出来(到浏览器上)
 display_errors = Off
-;不将PHP启动时发生的错误信息显示出来(到浏览器上) 
+;不将PHP启动时发生的错误信息显示出来(到浏览器上)
 display_startup_errors = Off
 ;这让PHP可以将错误信息日志记录到日志文件里
 log_errors = On
@@ -130,16 +136,19 @@ file_uploads = On
 upload_max_filesize = 20M
 ```
 
-## 相关测试
+# 相关测试
 
 重启httpd服务
-```
+
+``` bash
 [root@localhost~]# systemctl restart httpd
 ```
+
 为了测试Apache能不能正常调用PHP，在/var/www/html目录下新建一个phpinfo.php文档，
 
 code如下所示
-```
+
+``` bash
 [root@localhost etc]# cd /var/www/html
 [root@localhost html]# vi phpinfo.php
 <?php

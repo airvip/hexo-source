@@ -15,10 +15,11 @@ LAMP是Linux+Apache+MySQL+PHP的简称，是用于搭建web服务器的一种解
 
 为了要安装MySQL，我选择的是去官网下载安装包，不过在下载之前需要先注册。因为使用的是CentOS 7系统，所以我下载的是mysql57-community-release-el7-8.noarch.rpm这个文件。下载下来后，将它上传到/root目录下。
 
-## 添加软甲源
+# 添加软甲源
 
 将MySQL Yum Repository添加到系统的软件库列表（repositorylist）。
-```
+
+``` bash
 [root@localhost ~]# ls
 anaconda-ks.cfg  mysql57-community-release-el7-8.noarch.rpm
 [root@localhost ~]# yum localinstall mysql57-community-release-el7-8.noarch.rpm 
@@ -26,16 +27,19 @@ anaconda-ks.cfg  mysql57-community-release-el7-8.noarch.rpm
 ```
 
 检查是否添加成功
-```
+
+``` bash
 [root@localhost ~]# yum repolist enabled | grep mysql
 mysql-connectors-community/x86_64      MySQL Connectors Community            21
 mysql-tools-community/x86_64           MySQL Tools Community                 33
 mysql57-community/x86_64               MySQL 5.7 Community Server            74
 ```
 
-## 安装MySQL
+# 安装MySQL
+
 查看要下载的软件包是否存在
-```
+
+``` bash
 [root@localhost ~]# yum list | grep mysql
 .........省略...............
 mysql-community-server.x86_64    5.7.12-1.el7    mysql57-community
@@ -43,28 +47,33 @@ mysql-community-server.x86_64    5.7.12-1.el7    mysql57-community
 ```
 
 安装mysql
-```
+
+``` bash
 [root@localhost ~]# yum -y install mysql-community-server
 ```
+
 ![installmysql](/img/201601/mysql/installmysql.jpg)
 
 如图所示，这个命令会安装3个包30个包依赖，它会安装包括MySQL client、共享客户端库（mysql-community-libs）等软件。注意到，这里安装的MySQL版本为5.7.12,截至2016/1/29日最新版，肯定有好多坑要踩。
 
 启动mysqld服务并将其设为开机启动：
-```
+
+``` bash
 [root@localhost ~]# systemctl start mysqld
 [root@localhost ~]# systemctl enable mysqld
 ```
 
 检查mysqld服务状态
-```
+
+``` bash
 [root@localhost ~]# systemctl status mysqld
 ```
+
 ![mysqld](/img/201601/mysql/mysqld.jpg)
 
-
 查看mysqld服务侦听端口
-```
+
+``` bash
 [root@localhost ~]# netstat -atulpn | grep mysqld
 tcp6    0      0 :::3306     :::*        LISTEN      2722/mysqld 
 ```
@@ -74,20 +83,24 @@ MySQL侦听tcp端口3306。<span style="color:red">防火墙并未放通该端�
 根据MySQL官方手册，建议安装完MySQL数据库后，使用下面的命令来
 
 增强数据库的安全性
-```
+
+``` bash
 [root@localhost log]# mysql_secure_installation
 ```
-  * 该命令程序可以协助你设置数据库root账号的密码，(5.7.12密码要很复杂，如)`Iloveyou.123456`
-  * 移除匿名用户账号，y
-  * 禁用远程登录root账号，n
-  * 移除自带的test数据库，n(结果还是移除了)
-  * 是否要重新加载特权表以让修改生效。y
+
+* 该命令程序可以协助你设置数据库root账号的密码，(5.7.12密码要很复杂，如)`Iloveyou.123456`
+* 移除匿名用户账号，y
+* 禁用远程登录root账号，n
+* 移除自带的test数据库，n(结果还是移除了)
+* 是否要重新加载特权表以让修改生效。y
+
 传送门：[详细官方文档（注：全是英文）](http://dev.mysql.com/doc/refman/5.7/en/mysql-secure-installation.html)
 
 你可以设置数据库root账号密码后，其它的都选是(Y)。
 
 *如果不想使用上面的命令*，那可以使用下面的命令来给root账号设置密码，回车后它会提示你输入密码的
-```
+
+``` bash
 [root@localhost log]# mysql_secure_installation
 ```
 
@@ -96,7 +109,8 @@ MySQL侦听tcp端口3306。<span style="color:red">防火墙并未放通该端�
 <span style="color:red">上面的命令回车后需要输入原来的旧密码，</span>
 
 查找旧密码
-```
+
+``` bash
 [root@localhost ~]# cd /var/log
 [root@localhost log]# cat mysqld.log
 有这么一句
@@ -107,7 +121,8 @@ MySQL侦听tcp端口3306。<span style="color:red">防火墙并未放通该端�
 提示修改root账号的密码：mysqladmin -u root password不灵了
 
 Mysql几条命令解释
-```
+
+``` bash
 连接数据库
 [root@localhost ~]# mysql -h127.0.0.1 -uroot -p
 Enter password: 
@@ -197,7 +212,8 @@ Bye
 ```
 
 设定好后，就可以使用wzb登录MySQL了，查看数据库。
-```
+
+``` bash
 [root@localhost ~]# mysql -hlocalhost -uwzb -p
 Enter password: 
 
@@ -213,6 +229,6 @@ mysql> show databases;
 
 关于mysql
 
-  * /etc/my.cnf：这是MySQL的配置文件。可能的操作就是设置字符集
-  * /var/lib/mysql：这是数据库实际存放目录。毫无疑问，不能删，并且，要注意，给予其所在分区足够的容量。
-  * /var/log/mysqld.log：这是MySQL的错误日志文件。
+* /etc/my.cnf：这是MySQL的配置文件。可能的操作就是设置字符集
+* /var/lib/mysql：这是数据库实际存放目录。毫无疑问，不能删，并且，要注意，给予其所在分区足够的容量。
+* /var/log/mysqld.log：这是MySQL的错误日志文件。

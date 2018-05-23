@@ -12,20 +12,23 @@ tags:
 
 <!-- more -->
 
-## Apache重写
+# Apache重写
 
 1、httpd.conf配置文件中加载了mod_rewrite.so模块
 
 2、AllowOverride None 将None改为 All
-```
+
+``` bash
 <Directory "/server/www">
     Options Indexes FollowSymLinks
     AllowOverride all
     Require all granted
 </Directory>
 ```
+
 3、把下面的内容保存为.htaccess文件放到应用入口文件的同级目录下
-```
+
+``` bash
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -34,14 +37,17 @@ tags:
 </IfModule>
 ```
 
-## IIS重写
+# IIS重写
 
 如果你的服务器环境支持ISAPI_Rewrite的话，可以配置httpd.ini文件，添加下面的内容：
-```
+
+``` bash
 RewriteRule (.*)$ /index\.php\?s=$1 [I]
 ```
+
 在IIS的高版本下面可以配置web.Config，在中间添加rewrite节点：
-```
+
+``` bash
 <rewrite>
     <rules>
         <rule name="OrgPage" stopProcessing="true">
@@ -57,11 +63,11 @@ RewriteRule (.*)$ /index\.php\?s=$1 [I]
 </rewrite>
 ```
 
-## Nginx重写
+# Nginx重写
 
 在Nginx低版本中，是不支持PATHINFO的，但是可以通过在Nginx.conf中配置转发规则实现：
 
-```
+``` bash
 location / { // …..省略部分代码
     if (!-e $request_filename) {
         rewrite  ^(.*)$  /index.php?s=$1  last;
@@ -73,13 +79,15 @@ location / { // …..省略部分代码
 <span style="color:green">其实内部是转发到了ThinkPHP提供的兼容模式的URL，利用这种方式，可以解决其他不支持PATHINFO的WEB服务器环境。</span>
 
 如果你的ThinkPHP安装在二级目录，Nginx的伪静态方法设置如下，其中youdomain是所在的目录名称。
-```
+
+``` bash
 location /youdomain/ {
     if (!-e $request_filename){
         rewrite  ^/youdomain/(.*)$  /youdomain/index.php?s=$1  last;
     }
 }
 ```
+
 原来的访问URL：
 
 `http://serverName/index.php/模块/控制器/操作/[参数名/参数值...]`

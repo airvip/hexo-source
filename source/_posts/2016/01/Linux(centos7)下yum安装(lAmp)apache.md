@@ -17,22 +17,24 @@ Apache是世界使用排名第一的Web服务器软件。它可以运行在几�
 
 学习嘛！就要多折腾，这样就学起来轻松了。
 
-## 操作平台
+# 操作平台
 
 查看操作环境
-```
+
+``` bash
 [root@localhost ~]# uname -a
 Linux localhost.localdomain 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 [root@localhost ~]# cat /etc/redhat-release 
 CentOS Linux release 7.1.1503 (Core) 
 ```
 
-## 安装
+# 安装
 
 安装apache软件
 
 Apache软件的软件包名称叫做httpd.
-```
+
+``` bash
 查看是否安装Apache
 [root@localhost ~]# yum list installed | grep httpd
 查看yum库有没有Apache
@@ -48,29 +50,37 @@ httpd.x86_64                            2.4.6-40.el7.centos            @base
 如图所示：安装的Apache版本2.4.6，根据红帽官方文档说明，RHEL 7 (或CentOS 7)上可用的Apache版本正是2.4版的。
 
 安装完成后，Apache是以httpd服务的形式存在的。因此，要启动Apache并将其设置为开机启动，就使用命令：
-```
+
+``` bash
 [root@localhost ~]# systemctl start httpd.service
 [root@localhost ~]# systemctl enable httpd.service
 ln -s '/usr/lib/systemd/system/httpd.service' '/etc/systemd/system/multi-user.target.wants/httpd.service'
 # 查看httpd的服务状态
 [root@localhost ~]# systemctl status httpd.service
 ```
+
 ![httpd_02](/img/201601/apache/httpd_02.jpg)
 
 如图所示：<span style="color:red">“enabled”表示httpd服务已设为开机启动，“active（running）”则表示httpd服务正在运行中。</span>
 
 HTTP协议已被启动起来了，由于HTTP协议使用到tcp端口80，因此防火墙要放通tcp端口80：
-```
+
+``` bash
 [root@localhost ~]# firewall-cmd --zone=public --add-port=80/tcp --permanent
 ```
+
 出现success，重启防火墙让更改生效
-```
+
+``` bash
 [root@localhost ~]# firewall-cmd --reload
 ```
+
 出现seccess,检查是否配置成功
-```
+
+``` bash
 [root@localhost ~]# firewall-cmd --list-all
 ```
+
 ![httpd_03](/img/201601/apache/httpd_03.jpg)
 如图所示：tcp端口80已经开放
 
@@ -86,9 +96,11 @@ HTTP协议已被启动起来了，由于HTTP协议使用到tcp端口80，因此�
 
 可加载模块（如PHP）的配置文件应放置在/etc/httpd/conf.modules.d目录下，并且也以.conf结尾。
 
-## httpd.conf
+# httpd.conf
+
 httpd.conf配置文件的内容（少量配置有修改，应该可以直接替换你的http.conf）：
-```
+
+``` bash
 #我将删除一些介绍实在太多了
 # Configuration and logfile names: If the filenames you specify for many
 # of the server's control files begin with "/" (or "drive:/" for Win32), the
@@ -421,21 +433,24 @@ EnableSendfile on
 IncludeOptional conf.d/*.conf
 ```
 
-**说明**
+** 说明 **
 
 网页文档可以放置在/var/www/html目录下;
 CGI脚本可以放置在/var/www/cgi-bin目录下；
 错误日志在/etc/httpd/logs/error_log;
 访问日志在/etc/httpd/logs/access_log。
 设定好配置文件后，要测试配置文件语法有没有问题，可使用命令
-```
+
+``` bash
 [root@localhost conf]# apachectl configtest
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
 Syntax OK
 ```
+
 产生的信息是说没有配置主机名#ServerName www.example.com:80，语法OK（我会放在vhost里面）
 
 重启httpd服务
-```
+
+``` bash
 [root@localhost conf]# systemctl restart httpd
 ```
