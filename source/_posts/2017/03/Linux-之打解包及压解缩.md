@@ -14,7 +14,7 @@ tags:
 打包:将一大堆文件或目录变成一个总的文件。
 压缩:将一个大的文件通过一些压缩算法变成一个小文件。
 
-## tar 打包与解包
+# tar 打包与解包
 
 只使用 `tar` 命令我们打包好的文件后缀名一般使用 `.tar`
 tar 命令本事只负责打包或解包，并不负责压缩解压缩
@@ -45,7 +45,7 @@ $ tar -cvf mylog.tar /var/2017/01* #仅打包不进行压缩
 $ tar -xvf mylog.tar
 ```
 
-## gzip 压缩解压缩
+# gzip 压缩解压缩
 
 `tar` 与 `gzip` 命令可以结合使用，来实现对文件打包并压缩的目的，使用 `gzip` 对 `tar` 包进行压缩后的文件扩展名，我们一般使用 `.tar.gz`
 
@@ -66,7 +66,7 @@ $ tar -zxvf mylog.tar.gz
 $ tar -zxvf mylog.tar.gz -C ~/Desktop/mylog
 ```
 
-## bzip2 压缩解压缩
+# bzip2 压缩解压缩
 
 `tar` 与 `bzip2` 命令可以结合使用，来实现对文件打包并压缩的目的，使用 `bzip2` 对 `tar` 包进行压缩后的文件扩展名，我们一般使用 `.tar.bz2`
 

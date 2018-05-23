@@ -21,7 +21,7 @@ tags:
 由于机器人现在还比较智障，该案例只用于测试，不能用于生产环境。
 使用机器人存在一定概率被限制登录的可能性,主要表现为无法登陆 Web 微信 (但不影响手机等其他平台)。
 
-## 申请机器人
+# 申请机器人
 
 在 [图灵机器人官网](http://www.tuling123.com/) 注册，进入》机器人管理》点击创建机器人
 ![创建机器人](/img/201704/wxrobot/wxrobot01.png)
@@ -29,7 +29,7 @@ tags:
 在创建的机器人中的，机器人设置中 获取 API地址 及 APIkey
 ![机器人key](/img/201704/wxrobot/wxrobot02.png)
 
-## 安装 wxpy
+# 安装 wxpy
 
 wxpy 支持 Python 3.4-3.6，以及 2.7 版本
 如果机器上安装了 Python2 ,又安装了 Python3,请将下方命令中的 “pip” 替换为 “pip3” 或 “pip2”，可确保安装到对应的 Python 版本中
@@ -44,7 +44,7 @@ pip install -U wxpy
 pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
 ```
 
-## 编程实现
+# 编程实现
 
 ```
 #!/usr/bin/env python3

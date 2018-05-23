@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## VMware Workstation 简介
+# VMware Workstation 简介
 
 VMware Workstation Pro 确立了在单台 Linux 或 Windows PC 上运行多个操作系统的行业标准。
 
@@ -20,7 +20,7 @@ VMware Workstation Pro 确立了在单台 Linux 或 Windows PC 上运行多个�
 
 Workstation 14 Pro 借助 VMware 虚拟硬件版本 14 的功能特性进一步完善了领先的桌面 hypervisor，上述功能特性包括：虚拟网络模拟、经过更新的最新Windows 及 Linux 操作系统支持、新的基于虚拟化的安全性功能等。
 
-## VMware Workstation 14 Pro 安装步骤
+# VMware Workstation 14 Pro 安装步骤
 
 默认已经下载好 VMware Workstation 14 Pro 软件包。
 
@@ -56,18 +56,18 @@ Workstation 14 Pro 借助 VMware 虚拟硬件版本 14 的功能特性进一步�
 在第八步或者第十步点击完成后可自由选择是否立即重启电脑，因为只有重启后 vmware 的一些配置才会生效。
 
 
-## VMware 2017 v14.x 永久许可证激活密钥
+# VMware 2017 v14.x 永久许可证激活密钥
 
 * FF31K-AHZD1-H8ETZ-8WWEZ-WUUVA
 * CV7T2-6WY5Q-48EWP-ZXY7X-QGUWD
 
-## 常见问题
+# 常见问题
 
-### VMware 14.0 启动虚拟机系统黑屏
+## VMware 14.0 启动虚拟机系统黑屏
 经总结主要原因是14版本之后注册了两个LSP协议（vSockets DGRAM、vSockets STREAM）导致异常！
 解决方法：使用LSP修复工具（例如：360安全卫士/金山毒霸里的LSP工具）修复LSP网络协议，或者重置下网络链接Winsock，即打开命令提示符cmd.exe，输入命令netsh winsock reset，重启系统即可解决！
 
-### VMware启动后假死卡住了
+## VMware启动后假死卡住了
 解决方法：关闭系统防火墙即可！
 
 

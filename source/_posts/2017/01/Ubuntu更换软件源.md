@@ -12,14 +12,14 @@ tags:
 
 <!-- more -->
 
-## 准备工作
+# 准备工作
 
 这也是我在修改别人的源码或者文件时经常做的一件事，就是先做备份。
 ``` bash
 $ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 ```
 
-## 修改软件源
+# 修改软件源
 
 默认大家已经知晓 vim 编辑器的基本使用。
 
@@ -35,13 +35,13 @@ deb http://ubuntu.cn99.com/ubuntu/ xenial-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu xenial-security multiverse
 ```
 
-## 更新软件源列表
+# 更新软件源列表
 ``` bash
 $ sudo apt-get update
 ```
 此时你就需要稍微等待一会就可以看到有这么多的软件是可以更新的，当然更不更新，选择权就在你手上了。
 
-## 软件源
+# 软件源
 
 1. [阿里巴巴 Ubuntu 镜像站帮助文档](http://mirrors.aliyun.com/help/ubuntu)
 2. [网易开源 Ubuntu 镜像站帮助文档](http://mirrors.163.com/.help/ubuntu.html)

@@ -13,7 +13,7 @@ apt 英文全称 Advannced Packaging Tool,是 Debian linux系列的安装包管�
 
 <!-- more -->
 
-## apt 帮助命令
+# apt 帮助命令
 
 我们直接在命令终端（terminal）中输入 `apt` 或者 `apt --help`即可查看相关命令
 
@@ -22,7 +22,7 @@ $ apt
 $ apt --help
 ```
 
-## 软件包搜索
+# 软件包搜索
 
 1. 搜索和 `foo` 匹配的软件包
 ``` bash
@@ -55,7 +55,7 @@ $ dpkg -l | grep <软件包名>
 ```
 
 
-## 软件包安装
+# 软件包安装
 
 1. 安装软件
 ``` bash
@@ -68,7 +68,7 @@ $ sudo apt-get install <软件包名称>
 $ apt-get -f install
 ```
 
-## 软件包维护
+# 软件包维护
 
 1. 更新可用软件包列表
 只会检查哪些软件包可以更新，并不会对这些可更新的软件包进行安装更新。
@@ -89,7 +89,7 @@ $ sudo apt-get dist-upgrade
 ```
 
 
-## 软件包删除
+# 软件包删除
 
 1. 卸载软件（保留配置文件）
 ``` bash
@@ -118,7 +118,7 @@ $ sudo apt-get clear
 $ sudo apt-get autoremove
 ```
 
-## 扩展：apt 与 apt-get
+# 扩展：apt 与 apt-get
 * apt 与 apt-get 都是 Ubuntu 下常用的安装软件的命令
 * 早期使用 apt-get,从 Ubuntu 16 开始，官方建议使用 apt
 * 这两个命令的使用方式非常相似

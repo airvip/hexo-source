@@ -11,12 +11,12 @@ Composer 是 PHP 的一个依赖管理工具。它允许你申明项目所依赖
 
 <!-- more -->
 
-## 依赖管理
+# 依赖管理
 
 Composer 不是一个包管理器。是的，它涉及 "packages" 和 "libraries"，但它在每个项目的基础上进行管理，在你项目的某个目录中（例如 vendor）进行安装。默认情况下它不会在全局安装任何东西。因此，这仅仅是一个依赖管理。
 这种想法并不新鲜，Composer 受到了 node's npm 和 ruby's bundler 的强烈启发。而当时 PHP 下并没有类似的工具。
 
-## 全局安装（推荐）
+# 全局安装（推荐）
 
 全局安装是将 Composer 安装到系统环境变量 PATH 所包含的路径下面，然后就能够在命令行窗口中直接执行 composer 命令了。
 
@@ -35,7 +35,7 @@ $ sudo mv composer.phar /usr/local/bin/composer
 1. 下载并运行 [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)。
 
 
-## 使用国内镜像
+# 使用国内镜像
 
 方法一：修改 composer 的全局配置文件（推荐）
 

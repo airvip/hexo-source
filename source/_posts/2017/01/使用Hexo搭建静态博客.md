@@ -10,18 +10,18 @@ tags: #文章标签就不再进行分类
 之前的动态博客不会再更新，有时间也会把某些内容迁移过来，该静态博客未来将会作为我的发泄主战场，所以喜欢的朋友可以常来光顾。阿尔维奇在这里给大家说声：新年快乐 ☺☺☺
 <!-- more -->
 
-## Hexo简介
+# Hexo简介
 
 快速、简洁且高效的博客框架。基于 Node.js ，支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。
 
 
 [Hexo中文网站传送门](https://hexo.io/zh-cn/)
 
-## 环境搭建
+# 环境搭建
 
 依赖环境: `node.js`、`npm(或cnpm)`，部署网站需要 `git`
 
-### 安装
+## 安装
 
 ``` bash
 # 全局安装 hexo-cli
@@ -30,7 +30,7 @@ $ npm install -g hexo-cli
 $ hexo -v 
 ```
 
-### 建站
+## 建站
 
 上面步骤完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
 
@@ -43,7 +43,7 @@ $ cd <folder>
 $ npm install
 ```
 
-### 网站体验
+## 网站体验
 
 启动服务器。默认情况下，访问网址为： http://localhost:4000/。
 
@@ -60,7 +60,7 @@ $ hexo server
 | -l, --log | 启动日记记录，使用覆盖记录格式 |
 
 
-### 其他命令
+## 其他命令
 
 新建一篇文章.如果没有设置 layout 的话，默认使用 `_config.yml` 中的 `default_layout` 参数代替。如果标题包含空格的话，请使用引号括起来。
 ``` bash
@@ -99,7 +99,7 @@ $ hexo clean
 
 [Hexo更多命令传送门](https://hexo.io/zh-cn/docs/commands.html)
 
-### 命令简写
+## 命令简写
 ``` bash
 $ hexo n # 等价于 hexo new
 $ hexo g # 等价于 hexo generate
@@ -107,13 +107,13 @@ $ hexo s # 等价于 hexo server
 $ hexo d # 等价于 hexo deploy
 ```
 
-## 网站部署
+# 网站部署
 
 编辑项目根目录下的 `_config,yml`
 
 ``` yml
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+# Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repository: git@github.com:airvip/airvip.github.io.git

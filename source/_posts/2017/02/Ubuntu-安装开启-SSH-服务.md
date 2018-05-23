@@ -16,7 +16,7 @@ SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安�
 
 Ubuntu 默认并没有安装 ssh 服务，如果通过 ssh 链接 ubuntu，需要自己手动安装 ssh-server。
 
-## 安装 ssh-server
+# 安装 ssh-server
 
 1. 检测是否安装 ssh server 软件包
 ``` bash
@@ -38,7 +38,7 @@ $ sudo apt update
 $ sudo apt -y install openssh-server
 ```
 
-## 启动与关闭 ssh 服务
+# 启动与关闭 ssh 服务
 
 * 检测 ssh 服务是否启动
 ``` bash
@@ -91,7 +91,7 @@ $ /etc/init.d/ssh reload
 [ ok ] Reloading ssh configuration (via systemctl): ssh.service.
 ```
 
-## 加入开启启动项
+# 加入开启启动项
 
 1. 查看是否已经加入开机启动项
 ![ssh-enable](/img/201702/ssh/ssh_enable.png)

@@ -11,13 +11,13 @@ SSH登录是需要用户名和密码的，要实现无密码登录，就需要�
 
 <!-- more -->
 
-## 操作须知
+# 操作须知
 
 关于 windows 系统需要先安装 git ,下面的命令也是在 git bash 中使用的，如果在安装 git 的时候，已经把 git bash 添加右键菜单，你可以直接在任意目录空白处右击直接调出 git bash,如果没有添加到右键菜单请自行在开始菜单或者安装目录中启动。
 
 关于 Linux 或者 Mac 电脑，可以直接使用系统自带的 terminal 命令行终端。
 
-## 生成秘钥
+# 生成秘钥
 
 先检查是否已经存在 ssh key
 ``` bash
@@ -41,7 +41,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ![ssh-keygen](/img/201702/sshkeygen/ssh-keygen.png)
 现在在使用 `ls ~/.ssh` 至少看到了 id_rsa 与 id_rsa.pub 这两个文件。
 
-## 参数说明
+# 参数说明
 -t rsa 参数生成 rsa 格式的 私钥 和 公钥
 -t dsa 参数生成 dsa 格式的 私钥 和 公钥
 -t 后面还可以使用 ecdsa 或者 ed25519 或者 rsa1

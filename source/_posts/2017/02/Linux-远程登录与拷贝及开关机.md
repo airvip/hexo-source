@@ -11,7 +11,7 @@ tags:
 
 <!-- more -->
 
-## ssh 远程登录
+# ssh 远程登录
 ``` bash
 $ ssh [-p port] user@remote
 ```
@@ -24,7 +24,7 @@ ssh 这个终端命令可以在 Linux 或者 Unix 系统系直接使用
 退出当前用户的远程登录可以使用 `exit` 命令
 一般在生产环境中为了安全会修改 SSH Server监听的端口
 
-## shutdown 关机与重启
+# shutdown 关机与重启
 
 `shutdown` 命令可以安全关闭或者重新启动系统
 
@@ -50,7 +50,7 @@ $ shutdown +5
 $ shutdown -c
 ```
 
-## scp 安全拷贝
+# scp 安全拷贝
 
 scp 就是 secure copy,是一个在 Linux 下用来进行远程拷贝文件的命令
 scp 对远程地址的格式与 ssh 基本相同，scp 在制定端口号的时候使用大写字母 `-P`

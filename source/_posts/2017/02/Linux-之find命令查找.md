@@ -13,7 +13,7 @@ tags:
 
 Linux find命令用来在指定目录下查找文件。
 
-## find语法
+# find语法
 
 ``` 
 # find [搜索路径] [参数] [表达式] [执行操作]
@@ -27,7 +27,7 @@ find 根据下列规则判断 path 和 expression，在命令列上第一个 `-`
 * `-exec command {} \;` 表示将查到的文件执行command操作,`{}`与`\;`之间有空格
 * `-ok` 和 `-exec` 用法一致，只不过在操作前要询用户
 
-## option选项
+# option选项
 | 选项 |  说明  |
 |:---- | :---- |
 | -amin n | 在过去 n 分钟内被读取过的文件或目录，单位以分钟计算 |
@@ -57,7 +57,7 @@ find 根据下列规则判断 path 和 expression，在命令列上第一个 `-`
 | -version 或 ——version | 显示版本信息 |
 
 
-## 基本使用
+# 基本使用
 
 列出当前目录及自门路下所有的文件与文件夹
 ``` bash
@@ -91,7 +91,7 @@ $ find . -regex ".*\(\.txt\|\.pdf\)$"
 $ find /usr/ -path "*local*"
 ```
 
-## 按文件类型查
+# 按文件类型查
 ``` bash
 $ find . -type 类型参数
 ```
@@ -104,7 +104,7 @@ $ find . -type 类型参数
 * p —— Fifo
 * s —— 套接字
 
-## 按文件大小查
+# 按文件大小查
 ``` bash
 $ find . -type f -size 文件大小单元
 ```
@@ -129,7 +129,7 @@ $ find . -type f -size +10k
 $ find . -type f -size -10k
 ```
 
-## 结合操作命令
+# 结合操作命令
 
 找出当前目录下所有air的文件，并把所有权更改为用户yaya
 ``` bash
@@ -157,7 +157,7 @@ $ find . -type f -mtime +30 -name "*.log" -exec mv {} old \;
 $ find . -type f -name "*.txt" -exec printf "Name: %s\n" {} \;
 ```
 
-## 其他
+# 其他
 查找当前目录或者子目录下所有.txt文件，但是跳过子目录dev
 ``` bash
 $ find . -path "./dev" -prune -o -name "*.txt" -print

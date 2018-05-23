@@ -12,7 +12,7 @@ vmware tools是虚拟机VMware Workstation自带的一款工具。我认为vmwar
 
 <!-- more -->
 
-## vmware tools 功能
+# vmware tools 功能
 
 1. 更新虚拟机中的显卡驱动, 使虚拟机中的XWindows可以运行在SVGA模式下。
 2. 在主机和客户机之间时间同步。
@@ -22,7 +22,7 @@ vmware tools是虚拟机VMware Workstation自带的一款工具。我认为vmwar
 6. 改善网络性能。
 ...等等优秀的功能。
 
-## vmware tools 安装
+# vmware tools 安装
 
 虚拟机主要是以 Ubuntu16.04 Linux 版本为演示目标。
 
@@ -36,7 +36,7 @@ $ cd /media/airvip/VMware\ Tools  #airvip 目录是当前用户名
 $ ls
 manifest.txt     VMwareTools-10.2.0-7259539.tar.gz  vmware-tools-upgrader-64
 run_upgrader.sh  vmware-tools-upgrader-32
-``
+```
 
 3. 将 VMwareTools-10.2.0-7259539.tar.gz 解压到个人主目录下
 ``` bash

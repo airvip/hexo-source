@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-## 安装过程
+# 安装过程
 
 安装搜狗输入法毫无疑问是需要安装 fcitx 依赖的，除此之外，libssh2-1 也是必不可少的依赖。
 
@@ -45,7 +45,7 @@ $ sudo apt install -f
 $ reboot
 ```
 
-## 结果检验
+# 结果检验
 ![搜狗输入法界面](/img/201702/sougou/sougou_desktop.png)
 
 
