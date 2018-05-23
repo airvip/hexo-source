@@ -2,7 +2,7 @@
 title: mysql_secure_installation详解
 date: 2016-02-01 18:24:56
 tags:
-    - MySQL
+    - Mysql
 ---
 
 > 如果你还记得我们的约定，我在之前的路口等你。
