@@ -16,6 +16,7 @@ jQuery Lazy Load 基于 jQuery 的图片延迟加载插件，在用户滚动页�
 1、前往 gitHub 直接下载使用，[下载地址](https://github.com/tuupola/jquery_lazyload/)
 
 2、可以使用 yarn 或 npm 来安装 beta 版本。
+
 ``` bash
 $ yarn add lazyload # 使用 yarn 安装
 $ npm install lazyload # 使用 npm 安装
@@ -24,16 +25,19 @@ $ npm install lazyload # 使用 npm 安装
 # 基础使用
 
 1、将代码引入自己的项目
+
 ``` html
 //jquery.lazyload.js依赖jquery库
 <script src="jquery.js"></script>
 <script src="jquery.lazyload.js"></script>
 ```
+
 2、代码中图片设置如下
 
 1. 真实图片地址写在 data-original 属性中，而 src 属性中的图片换成占位符的图片（例如 1x1 像素的灰色图片或者 loading 的 gif 图片）
 2. 添加 class="lazy" 用于区别哪些图片需要延时加载，当然你也可以换成别的关键词，修改的同时记得修改调用时的 jQuery 选择器
 3. 添加 width 和 height 属性有助于在图片未加载时占满所需要的空间
+
 ``` html
 <img class="lazy" data-original="img/example.jpg" width="640" height="480">
 ```
@@ -45,6 +49,7 @@ $("img.lazy").lazyload();
 ```
 
 参数说明
+
 ``` html
 $("img.lazy").lazyload(
     container:window,
