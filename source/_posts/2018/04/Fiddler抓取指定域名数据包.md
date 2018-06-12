@@ -15,7 +15,7 @@ tags:
 
 # 抓取指定域名包
 
-点击 Fiddler 右侧窗口的 Filters 选项卡，，勾选顶部的Use Filters，找到Hosts区域，设置以下三个选项：
+点击 Fiddler 右侧窗口的 Filters 选项卡，勾选顶部的Use Filters，找到Hosts区域，设置以下三个选项：
 
 ![config](/img/201804/fiddler_filter/conf_01.jpg)
 
@@ -56,3 +56,11 @@ REGEX:\.(js|css|js\?.*|css\?.*)$
 打开浏览器，输入 www.baidu.com, 再输入 blog.diff.wang 查看结果
 
 ![test_result](/img/201804/fiddler_filter/test_result.jpg)
+
+# 快捷设置
+
+点击 Fiddler 右侧窗口的 Filters 选项卡，勾选顶部的 Use Filters，找到 Request Headers 区域，勾选set request header,文本框分别输入”Host”和”要过滤的域名”，如下图所示
+
+![easy_filter](/img/201804/fiddler_filter/easy_filter.jpg)
+
+最后点击 Actions > Run Filterset now 即可
