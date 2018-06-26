@@ -11,6 +11,8 @@ tags:
 
 <!-- more -->
 
+现在 Ubuntu 16.04 改变改变 Launcher 只需打开 terninal 执行一句简单的命令就可以实现。
+
 # 快速修改
 
 将启动器修改到底部
@@ -19,9 +21,12 @@ tags:
 $ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 ```
 
+![bottom](/img/201610/ubuntu_docker/bottom.jpg)
+
 将启动器修改到左侧
 
 ```
 $ gsettings set com.canonical.Unity.Launcher launcher-position Left
 ```
 
+![left](/img/201610/ubuntu_docker/left.jpg)
