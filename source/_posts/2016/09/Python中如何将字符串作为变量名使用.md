@@ -2,8 +2,7 @@
 title: Python中如何将字符串作为变量名使用
 date: 2016-09-16 14:14:36
 tags:
-    - Mysql
-    - Windows
+    - Python
 ---
 
 > 哥们很骄傲的说，我写了个很NB能让Windows崩溃的程序。旁边一妹纸冷漠的说，在一开始装系统的不就自带了吗？
