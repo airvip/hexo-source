@@ -88,10 +88,11 @@ mysqldump -h127.0.0.1 -u用户名 -p密码 -d 数据库名 > 数据库名.sql
 
 ``` Bash
 # /usr/local/mysql/bin/   mysqldump -127.0.0.1 -uroot -p -d abc > abc.sql
-``` 
-注：/usr/local/mysql/bin/  --->  mysql的目录
+```
 
-二、导入
+注：`/usr/local/mysql/bin/`  表示的是mysql的目录
+
+## 导入
 
 1、首先建空数据库
 
