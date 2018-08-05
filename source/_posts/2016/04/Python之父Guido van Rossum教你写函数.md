@@ -1,5 +1,5 @@
 ---
-title: Sweetalert优雅的做出弹出提示框
+title: Python之父Guido van Rossum教你写函数
 date: 2016-04-25 19:20:51
 tags:
     - Python
