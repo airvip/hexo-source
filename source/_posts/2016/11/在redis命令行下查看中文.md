@@ -7,7 +7,7 @@ tags:
 
 > At least I tried,At least I did that
 
-Redis 是完全开源免费的，遵守 BSD 协议，是一个高性能的 key-value 数据库。在使用命令行操作时，如果查看内容中包含中文，会显示16进制的字符串。如：`"\xe9\x98\xbf\xe5\xb0\x94\xe7\xbb\xb4\xe5\xa5\x87"`。
+Redis 是完全开源免费的，遵守 BSD 协议，高性能的 key-value 数据库。在使用命令行操作时，如果查看内容中包含中文，会显示16进制的字符串。如：`"\xe9\x98\xbf\xe5\xb0\x94\xe7\xbb\xb4\xe5\xa5\x87"`。
 
 <!-- more -->
 
