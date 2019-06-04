@@ -37,3 +37,13 @@ tags:
 5、win键+R键，打开运行，输入cmd，回车【enter】键，打开cmd，在命令行输入bash,回车【enter】键，按y键继续，安装完之后设置用户名与密码就可以
 
 ![deve](/img/201708/subsys/bash.jpg)
+
+# 子系统的启动与停止
+
+使用管理员身份打开 CMD
+
+启动 `net start LxssManager`
+
+停止 `net stop LxssManager`
+
+这样我们可以实现在不重新启动 Win10 的情况下开启关闭子系统。
