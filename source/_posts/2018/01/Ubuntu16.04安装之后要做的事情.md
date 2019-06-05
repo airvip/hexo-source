@@ -52,12 +52,12 @@ $ sudo apt-get remove thunderbird totem rhythmbox simple-scan gnome-mahjongg ais
 
 可选删除
 ``` bash
-$ sudo apt-remove -y remove yelp # 帮助
-$ sudo apt-remove -y remove bluez # 蓝牙
-$ sudo apt-remove -y remove gnome-software # Ubuntu 软件（软件商城）
-$ sudo apt-remove -y remove unity # unity 桌面 可以更换为 gnome 桌面
-$ sudo apt-remove -y remove gnome-system-monitor # 系统监视器
-$ sudo apt-remove -y remove gnome-system-log # 系统日志
+$ sudo apt-get -y remove yelp # 帮助
+$ sudo apt-get -y remove bluez # 蓝牙
+$ sudo apt-get -y remove gnome-software # Ubuntu 软件（软件商城）
+$ sudo apt-get -y remove unity # unity 桌面 可以更换为 gnome 桌面
+$ sudo apt-get -y remove gnome-system-monitor # 系统监视器
+$ sudo apt-get -y remove gnome-system-log # 系统日志
 ```
 
 这样我们的 Ubuntu 系统基本已经干净了。
