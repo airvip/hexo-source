@@ -69,14 +69,13 @@ GROUP BY
 按每 20 分钟统计某天的数据，'2017-12-25'为变量数据
 ``` bash
 SELECT 
-  COUNT(1) AS num ,CONCAT(FROM_UNIXTIME(create_time,'%H:'),
-  FLOOR(FROM_UNIXTIME(create_time,'%i')/20)*20) AS t
+  COUNT(1),CONCAT(FROM_UNIXTIME(create_time,'%H:'),(FLOOR(FROM_UNIXTIME(create_time,'%i')/20)+1)*20) AS t
 FROM 
   questions_log
 WHERE 
   FROM_UNIXTIME(create_time,'%Y-%m-%d') = '2017-12-25'
-ORDER BY 
-  t ;
+GROUP BY 
+  t;
 ```
 
 # 所用相关函数说明
