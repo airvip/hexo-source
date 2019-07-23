@@ -3,6 +3,7 @@ title: 对子系统的php7安装swoole扩展
 date: 2019-01-12 09:12:00
 tags: 
     - Swoole
+    - WSL
 ---
 
 > "我现在只想静一静思考下后面的路如何走"
