@@ -26,7 +26,7 @@ Maven 是一个基于 Java 的工具，所以安装 Maven 的前提是你已经�
 
 下载
 
-![apache-maven-3.6.3](http://note.youdao.com/yws/res/11142/ECC63FCBFA194EDD90E7395757E6C623)
+![apache-maven-3.6.3](https://s2.ax1x.com/2020/01/02/lYJWRJ.png)
 
 
 下载下来之后，直接解压缩到 D 盘（建议直接放在 D 盘，当然你放在哪都无所谓，你要你喜欢）
@@ -39,11 +39,11 @@ Maven 是一个基于 Java 的工具，所以安装 Maven 的前提是你已经�
 
 新建系统变量 MAVEN_HOME，变量值：D:\apache-maven-3.6.3
 
-![system-var](https://note.youdao.com/yws/res/11147/WEBRESOURCEf954cfaebc58cb552e21b7da801bc261)
+![system-var](https://s2.ax1x.com/2020/01/02/lYJRG4.png)
 
 编辑系统变量 Path，添加变量值：`%MAVEN_HOME%\bin;` 
 
-![edit-path](https://note.youdao.com/yws/res/11149/WEBRESOURCE7c7a8d3af561c53de46184d395d3c6b3)
+![edit-path](https://s2.ax1x.com/2020/01/02/lYJfz9.png)
 
 注意：注意多个值之间需要有分号隔开，然后点击确定。
 
