@@ -51,7 +51,7 @@ $ sudo service ssh restart
 
 现在就可以使用xshell登录了，效果如下
 
-![xshell_login](/img/201907/ssh/xshell_login.png)
+![xshell_login](https://s2.ax1x.com/2020/01/13/l75RCF.png)
 
 * 几个操作ssh的命令
 

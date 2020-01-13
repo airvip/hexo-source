@@ -29,13 +29,13 @@ $ sudo apt-get -y install libevent-dev
 $ sudo pecl install event
 ```
 安装event
-![install_event](/img/201905/event/install_event.jpg)
+![install_event](https://s2.ax1x.com/2020/01/13/l75oHx.jpg)
 
 提示：Include libevent OpenSSL support [yes] : 时输入no回车，
 提示：PHP Namespace for all Event classes :时输入yes，其它直接敲回车就行
 
 安装成功
-![install_completed](/img/201905/event/event_completed.jpg)
+![install_completed](https://s2.ax1x.com/2020/01/13/l75ID1.jpg)
 
 ```
 # 查看 php 实际加载的 ini 文件路径

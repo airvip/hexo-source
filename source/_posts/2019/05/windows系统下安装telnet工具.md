@@ -15,24 +15,24 @@ tags:
 
 1.在 windows 任意位置按 `win + R` 组合键，打开运行并输入 `control` 回车，进入控制面板
 
-![control](/img/201905/telnet_install/control.png)
+![control](https://s2.ax1x.com/2020/01/13/l7IUVx.png)
 
 2.点击`程序和功能`菜单，进入后，在左侧导航位置选择点击 `启用或关闭 Windows 功能`
 
 ![program_set](/img/201905/telnet_install/program_set.png)
 
 3.找到 `Telnet 客户端` 进行选中，再点 `确定` 按钮，进行安装直到结束。
-![program_set](/img/201905/telnet_install/install.png)
+![install](https://s2.ax1x.com/2020/01/13/l7IYrR.png)
 
 ## 测试
 
 我本机有个 tcp 服务，我可以直接测试，打开 cmd, 输入 `telnet 127.0.0.1 7272` 如图
 
-![telnet_test](/img/201905/telnet_install/telnet_test.png)
+![telnet_test](https://s2.ax1x.com/2020/01/13/l7I1GF.png)
 
 测试结果
 
-![telnet_result](/img/201905/telnet_install/telnet_result.png)
+![telnet_result](https://s2.ax1x.com/2020/01/13/l7I324.png)
 
 
 
