@@ -194,3 +194,35 @@ services:
 打开浏览器 ip:8000 访问服务
 
 
+# Mysql
+
+创建文件 `/usr/local/docker/mysql/docker-compose.yml` 进入 `/usr/local/docker/mysql/` 目录，打开 `docker-compose.yml` 复制下面代码并粘贴
+
+``` yml
+version: '3.1'
+services:
+    mysql:
+      image: 'mysql:5.7.22'
+      restart: always
+      container_name: mysql
+      ports:
+        - '3307:3306'
+      environment:
+        TZ: 'Asia/Shanghai'
+        MYSQL_ROOT_PASSWORD: 123456
+      command:
+        --character-set-server=utf8mb4
+        --collation-server=utf8mb4_general_ci
+        --explicit_defaults_for_timestamp=true
+        --lower_case_table_names=1
+        --max_allowed_packet=128M
+        --sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO"
+      volumes:
+        # 在左边宿主机中起了个名字叫 mysql-data 的文件夹，就需要在宿主机定义下 mysql-data 
+        - mysql-data:/var/lib/mysql
+volumes:
+  # 定义 mysql-data ：存放位置(不写一般默认在 /var/lib/docker/volumes)
+  mysql-data:
+```
+
+然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
