@@ -10,6 +10,16 @@ tags:
 
 <!-- more -->
 
+查看 linux 端口占用 
+
+`netstat -ntulp |grep 80 ` //查看80端口使用情况
+
+* -n 拒绝显示别名，能显示数字的全部转化为数字
+* -t (tcp) 仅显示tcp相关选项
+* -u (udp)仅显示udp相关选项
+* -l 仅列出在Listen(监听)的服务状态
+* -p 显示建立相关链接的程序名
+
 # 微服务
 
 平台即服务(Paas)
@@ -69,6 +79,10 @@ services:
 
 然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
 
+## 测试
+
+打开浏览器 ip:80 访问服务
+
 # Nexus
 
 创建文件 `/usr/local/docker/nexus/docker-compose.yml` 进入 `/usr/local/docker/nexus/` 目录，打开 `docker-compose.yml` 复制下面代码并粘贴
@@ -88,12 +102,25 @@ services:
 
 然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
 
+
 ## 测试
 
 打开浏览器 ip:8081 访问服务
 登录，默认 账户：admin  
 
 ![nexus sign in](https://s2.ax1x.com/2020/01/16/lv1FfK.png)
+
+### 问题
+如果无法访问服务，可以通过 `docker logs 容器ID` 查看原因,具体问题具体分析
+
+```
+mkdir: cannot create directory '../sonatype-work/nexus3/log': Permission denied
+mkdir: cannot create directory '../sonatype-work/nexus3/tmp': Permission denied
+# 说明没有权限
+[root@localhost nexus]# docker-compose down
+[root@localhost nexus]# chmod 777 data/
+[root@localhost nexus]# docker-compose up
+```
 
 
 # Registry
@@ -226,3 +253,50 @@ volumes:
 ```
 
 然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
+
+## 测试
+使用本地客户端连接测试  
+
+```
+C:\Users\sdqhw>mysql -h192.168.1.27 -P3307 -uroot -p123456
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 265
+Server version: 5.7.22 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+```
+
+
+# Gogs
+
+Gogs 一款极易搭建的自助 Git 服务
+
+创建文件 `/usr/local/docker/gogs/docker-compose.yml` 进入 `/usr/local/docker/gogs/` 目录，打开 `docker-compose.yml` 复制下面代码并粘贴
+
+``` yml
+version: '2'
+services:
+  gogs:
+    image: gogs/gogs
+    container_name: gogs
+    restart: always
+    volumes:
+      - /usr/local/docker/gogs/data:/data
+    ports:
+      - "3001:3000"
+      - "2223:22"
+```
+
+然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
+
+## 测试与配置
+
+打开浏览器 ip:3001 访问服务,处理访问会进入安装配置页面
+
+![gogs](https://s2.ax1x.com/2020/01/20/1P4oY8.png)
