@@ -286,17 +286,23 @@ services:
     image: gogs/gogs
     container_name: gogs
     restart: always
+    environment:
+      TZ: 'Asia/Shanghai'
     volumes:
       - /usr/local/docker/gogs/data:/data
+      - /usr/local/docker/gogs/log:/var/log/gogs
     ports:
-      - "3001:3000"
-      - "2223:22"
+      - '3001:3000'
+      - '2223:22'
 ```
+
+gogs配置文件路径 `/usr/local/docker/gogs/data/gogs/conf/app.ini`
 
 然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
 
 ## 测试与配置
 
+
 打开浏览器 ip:3001 访问服务,处理访问会进入安装配置页面
 
-![gogs](https://s2.ax1x.com/2020/01/20/1P4oY8.png)
+![gogs](https://s2.ax1x.com/2020/01/20/1iSRC4.png)
