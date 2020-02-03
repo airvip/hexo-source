@@ -33,7 +33,7 @@ nodejs-abbrev.noarch                    1.0.4-6.el7                    epel
 [root@localhost ~]# yum -y install nodejs
 nodejs_installed.jpg
 ```
-![yum insall -y nodejs](/img/201603/nodejs/node.jpg)
+![yum insall -y nodejs](https://s2.ax1x.com/2020/02/03/1UEdVx.jpg)
 **备注**：安装的版本可能比较旧，分情况使用
 
 方式二：采用编译安装

@@ -55,7 +55,7 @@ Max kernel policy version:      28
 关于永久修改，可以在本博客中查看 selinux 的相关标签。
 
 测试结果
-![test](/img/201603/redis_php/test.jpg)
+![test](https://s2.ax1x.com/2020/02/03/1UErGD.jpg)
 
 好了，问题解决。
 

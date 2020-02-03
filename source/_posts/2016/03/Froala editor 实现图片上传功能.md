@@ -169,7 +169,7 @@ if ((($mime == "image/gif")||($mime == "image/jpeg")||($mime == "image/pjpeg")||
 ```
 
 # 测试结果
-![测试结果](/img/201603/froala/result.jpg)
+![测试结果](https://s2.ax1x.com/2020/02/03/1UEUq1.jpg)
 
 [demo代码已经更新到github,点击查看](https://github.com/airvip/edit_demo)
 

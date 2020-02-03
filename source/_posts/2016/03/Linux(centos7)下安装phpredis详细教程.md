@@ -126,7 +126,7 @@ Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
     phpinfo();
 ?>
 ```
-![phpredis](/img/201603/phpredis/phpredis.jpg)
+![phpredis](https://s2.ax1x.com/2020/02/03/1UE0IK.jpg)
 
 9、通过php连接redis
 ``` bash
