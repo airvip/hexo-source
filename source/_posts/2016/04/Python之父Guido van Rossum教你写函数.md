@@ -13,7 +13,7 @@ tags:
 
 每个程序员在学习编程的过程中，肯定没少写过main()函数，Python程序员也不例外。
 
-![Guido](/img/201604/python/guido.jpg)
+![Guido](https://s2.ax1x.com/2020/02/03/1UVz7t.jpg)
 
 # main() 对比
 

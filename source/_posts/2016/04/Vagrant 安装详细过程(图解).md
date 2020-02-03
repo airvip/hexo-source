@@ -21,27 +21,27 @@ Vagrant is a tool for building complete development environments.
 # 安装流程
 
 1. 开始安装，找到下载的位置，双击安装软件（按红线步骤安装）
-![开始安装](/img/201604/vgrant_install/vgrant01.jpg)
+![开始安装](https://s2.ax1x.com/2020/02/03/1UZQ9U.jpg)
 
 2. 出现下面内容，next下一步
-![下一步安装](/img/201604/vgrant_install/vgrant02.jpg)
+![下一步安装](https://s2.ax1x.com/2020/02/03/1UZl3F.jpg)
 
 3. 接受许可，继续next
-![接受许可](/img/201604/vgrant_install/vgrant03.jpg)
+![接受许可](https://s2.ax1x.com/2020/02/03/1UZ1c4.jpg)
 
 4. 看个人习惯，是否修改安装目录
-![修改安装目录](/img/201604/vgrant_install/vgrant04.jpg)
+![修改安装目录](https://s2.ax1x.com/2020/02/03/1UZKhT.jpg)
 
 5. 安装进行中，吃块糖，就安装好了
-![等待安装](/img/201604/vgrant_install/vgrant05.jpg)
+![等待安装](https://s2.ax1x.com/2020/02/03/1UZkcQ.jpg)
 
 6. 现在已经安装完成，继续向下看
-![安装完成](/img/201604/vgrant_install/vgrant06.jpg)
+![安装完成](https://s2.ax1x.com/2020/02/03/1UZ3jJ.jpg)
 
 7. 是否重启电脑，是
-![重启电脑](/img/201604/vgrant_install/vgrant07.jpg)
+![重启电脑](https://s2.ax1x.com/2020/02/03/1UZUN6.jpg)
 
 8. 重启过后，检验一下
-![检验成果](/img/201604/vgrant_install/vgrant08.jpg)
+![检验成果](https://s2.ax1x.com/2020/02/03/1UZa4K.jpg)
 
 Vagrant 到此已经安装完成。
