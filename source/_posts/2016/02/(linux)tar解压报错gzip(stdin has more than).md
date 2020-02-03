@@ -39,7 +39,7 @@ unzip.x86_64                            6.0-15.el7                     base
 ``` bash
 [root@localhost ~]# yum -y install unzip 
 ```
-![install unzip](/img/201602/unzip/install_unzip.jpg)
+![install unzip](https://s2.ax1x.com/2020/02/03/1UEPVP.jpg)
 
 解压文件到当前文件夹
 ``` bash

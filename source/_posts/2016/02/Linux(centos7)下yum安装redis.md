@@ -34,7 +34,7 @@ redis.x86_64                            2.8.19-2.el7                   epel
 ```
 [root@localhost ~]# yum -y install redis
 ```
-![redis_install.jpg](/img/201602/redis/redis_install.jpg)
+![redis_install.jpg](https://s2.ax1x.com/2020/02/03/1UEpDI.jpg)
 安装完可以使用`rpm -ql redis`查看安装的位置
 
 
@@ -61,7 +61,7 @@ ln -s '/usr/lib/systemd/system/redis.service' '/etc/systemd/system/multi-user.ta
 ```
 [root@localhost ~]# systemctl status redis.service
 ```
-![redis_status.jpg](/img/201602/redis/redis_status.jpg)
+![redis_status.jpg](https://s2.ax1x.com/2020/02/03/1UESKA.jpg)
 
 * enable已经开启随即启动，avtive(running)正在运行
 
