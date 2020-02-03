@@ -43,7 +43,7 @@ CentOS Linux release 7.1.1503 (Core)
 [root@localhost ~]# yum -y install php-mysql 
 ```
 
-![php-mysql](/img/201601/php-mysql/php-mysql.jpg)
+![php-mysql](https://s2.ax1x.com/2020/02/03/1UABcj.jpg)
 
 重启httpd服务
 
@@ -80,7 +80,7 @@ echo 'db test connected ok';
 ```
 
 浏览器测试
-![php-mysql-res](/img/201601/php-mysql/php-mysql-res.jpg)
+![php-mysql-res](https://s2.ax1x.com/2020/02/03/1UA03Q.jpg)
 
 用php-mysqlnd替换php-mysql
 

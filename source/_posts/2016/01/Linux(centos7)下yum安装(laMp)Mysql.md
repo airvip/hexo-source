@@ -52,7 +52,7 @@ mysql-community-server.x86_64    5.7.12-1.el7    mysql57-community
 [root@localhost ~]# yum -y install mysql-community-server
 ```
 
-![installmysql](/img/201601/mysql/installmysql.jpg)
+![installmysql](https://s2.ax1x.com/2020/02/03/1UAnAK.jpg)
 
 如图所示，这个命令会安装3个包30个包依赖，它会安装包括MySQL client、共享客户端库（mysql-community-libs）等软件。注意到，这里安装的MySQL版本为5.7.12,截至2016/1/29日最新版，肯定有好多坑要踩。
 
@@ -69,7 +69,7 @@ mysql-community-server.x86_64    5.7.12-1.el7    mysql57-community
 [root@localhost ~]# systemctl status mysqld
 ```
 
-![mysqld](/img/201601/mysql/mysqld.jpg)
+![mysqld](https://s2.ax1x.com/2020/02/03/1UAe76.jpg)
 
 查看mysqld服务侦听端口
 

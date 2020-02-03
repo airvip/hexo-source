@@ -45,7 +45,7 @@ httpd.x86_64                            2.4.6-40.el7.centos            @base
 [root@localhost ~]# yum -y install httpd
 ```
 
-![httpd_01](/img/201601/apache/httpd_01.jpg)
+![httpd_01](https://s2.ax1x.com/2020/02/03/1UkYYF.jpg)
 
 如图所示：安装的Apache版本2.4.6，根据红帽官方文档说明，RHEL 7 (或CentOS 7)上可用的Apache版本正是2.4版的。
 
@@ -59,7 +59,7 @@ ln -s '/usr/lib/systemd/system/httpd.service' '/etc/systemd/system/multi-user.ta
 [root@localhost ~]# systemctl status httpd.service
 ```
 
-![httpd_02](/img/201601/apache/httpd_02.jpg)
+![httpd_02](https://s2.ax1x.com/2020/02/03/1UktW4.jpg)
 
 如图所示：<span style="color:red">“enabled”表示httpd服务已设为开机启动，“active（running）”则表示httpd服务正在运行中。</span>
 
@@ -81,14 +81,14 @@ HTTP协议已被启动起来了，由于HTTP协议使用到tcp端口80，因此�
 [root@localhost ~]# firewall-cmd --list-all
 ```
 
-![httpd_03](/img/201601/apache/httpd_03.jpg)
+![httpd_03](https://s2.ax1x.com/2020/02/03/1UkJFU.jpg)
 如图所示：tcp端口80已经开放
 
 在物理机浏览器访问刚搭建的web服务器，因为我是在虚拟机做的，又是nat网络模式，要访问就必须做端口映射，这就是之前做了准备
 
 不过，因为这个时候还未创建任何页面，所以它显示的是Apache软件自带的测试页面：
 
-![httpd_04](/img/201601/apache/httpd_04.jpg)
+![httpd_04](https://s2.ax1x.com/2020/02/03/1UkUSJ.jpg)
 
 说明：
 

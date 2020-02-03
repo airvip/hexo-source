@@ -18,6 +18,8 @@ tags:
 2. 在实现接口的类中快速插入接口的方法  (`Alt`+`Insert`)
 3. 在 web 控制器快速插入 service 方法的变量名 (`Alt`+`Enter` ) 或者 `.var`
 4. System.out.println 依次输入字母键 (`S`,`O`,`U`,`T`,`P`)
+5. 添加try/catch的快捷键 ( 选中想被try/catch包围的语句，同时按下 `Ctrl`+`Alt`+`T`)
+6. 类中快速插入main方法 (依次按下`P`,`S`,`V`,`M`) 或 (直接输入字符串 "main" + `Enter`键)
 
 
 # 复制

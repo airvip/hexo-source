@@ -39,7 +39,7 @@ php.x86_64                              5.4.16-36.el7_1                @base
 [root@localhost ~]# yum -y install php
 ```
 
-![php_install](/img/201601/php/php_install.jpg)
+![php_install](https://s2.ax1x.com/2020/02/03/1UAw9g.jpg)
 
 如图所示，安装的PHP版本为5.4.16。
 
@@ -158,6 +158,6 @@ code如下所示
 
 保存之后在物理机（自己的主机）测试，看到如下界面
 
-![test](/img/201601/php/test.jpg)
+![test](https://s2.ax1x.com/2020/02/03/1UAa4S.jpg)
 
 测试完后，这个页面里面的信息还挺重要的，<span style="color:red">推荐把phpinfo.php这个文件删除</span>。

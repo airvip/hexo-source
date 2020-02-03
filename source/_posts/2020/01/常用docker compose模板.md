@@ -83,7 +83,43 @@ services:
 
 打开浏览器 ip:80 访问服务
 
-# Nexus
+# Nexus2
+
+创建文件 `/usr/local/docker/nexus2/docker-compose.yml` 进入 `/usr/local/docker/nexus2/` 目录，打开 `docker-compose.yml` 复制下面代码并粘贴
+
+``` yml
+version: '2.1'
+services:
+    nexus2:
+      image: 'sonatype/nexus'
+      restart: unless-stopped
+      container_name: nexus2
+      ports:
+        - '8081:8081'
+      volumes:
+        - /usr/local/docker/nexus2/nexus-data:/sonatype-work
+```
+
+创建目录 并 修改所属用户
+```
+[root@localhost nexus2]# mkdir /usr/local/docker/nexus2/nexus-data && chown -R 200 /usr/local/docker/nexus2/nexus-data
+```
+
+然后使用命令 `docker-compose up -d` 来启动，停止服务使用 `docker-compose down`
+
+## 测试
+
+```
+[root@localhost nexus2]# curl http://localhost:8081/nexus/service/local/status
+```
+
+打开浏览器 http://ip:8081/nexus/ 访问服务
+登录，默认 账户：admin 密码: admin123 
+
+![nexus2](https://s2.ax1x.com/2020/02/03/1UkQLq.png)
+
+
+# Nexus3
 
 创建文件 `/usr/local/docker/nexus/docker-compose.yml` 进入 `/usr/local/docker/nexus/` 目录，打开 `docker-compose.yml` 复制下面代码并粘贴
 
