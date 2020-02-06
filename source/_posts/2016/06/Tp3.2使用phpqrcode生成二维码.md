@@ -17,7 +17,7 @@ tags:
 1、下载 phpqrcode 类包，[点击在 github 上下载](https://github.com/t0k4rt/phpqrcode)
 
 2、将类包全部放入thinkPHP的vendor，如图
-![thinkphp vendor](/img/201606/phpcode/phpvendor.jpg)
+![thinkphp vendor](https://s2.ax1x.com/2020/02/06/1ytgjf.jpg)
 
 # 编程实现
 
@@ -167,4 +167,4 @@ Js 提交请求代码如下
 
 # 效果图
 最终效果图
-![result](/img/201606/phpcode/result.jpg)
+![result](https://s2.ax1x.com/2020/02/06/1yt63t.jpg)

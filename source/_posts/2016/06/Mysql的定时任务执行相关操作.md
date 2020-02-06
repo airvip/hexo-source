@@ -74,7 +74,7 @@ EVERY 1 DAY STARTS '2016-06-01 01:00:00'
 ``` Sql
 mysql> select * from event\G
 ```
-![mysql crond](/img/201606/mysqlsch/crond.jpg)
+![mysql crond](https://s2.ax1x.com/2020/02/06/1ytr4A.jpg)
 
 
 # 测试

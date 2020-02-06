@@ -22,13 +22,13 @@ PHPMailer是一个用于发送电子邮件的PHP函数包。
 
 第二步：
 把下载的文件放在如下目录：`thinkphp/library/vendor/`下面，并按命名规则命名
-![phpmailer_dir](/img/201606/phpmailer/phpmailer_dir.jpg)
+![phpmailer_dir](https://s2.ax1x.com/2020/02/06/1ytfHg.jpg)
 可以看到PHPMailer里面有一个PHPMailerAutoload.php，该文件是自动载入phpmail所需的类库，所以我们直接引入该文件就好了。
 
 第三步:
 
 在应用目录里面任意模块的控制器文件夹建立文件，我之所以会在`Application/Common/Controller`文件夹下建立`EmailController.class.php`,是因为我要在前台后台都调用该控制器，实现代码的重用。
-![phpmailer_file](/img/201606/phpmailer/phpmailer_file.jpg)
+![phpmailer_file](https://s2.ax1x.com/2020/02/06/1yt4EQ.jpg)
 
 EmailController.class.php的代码如下，如果您放的目录不一样，记得修改命名空间
 
