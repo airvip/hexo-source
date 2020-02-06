@@ -22,7 +22,7 @@ laravel初学者之路将由laravel5及之后的版本作为学习目标，这�
 
 传送门：建模工具数据库管理神器mysql workbench
 
-![mysql workbench](/img/201605/laraveldb/workbench.jpg)
+![mysql workbench](https://s2.ax1x.com/2020/02/06/1yYlWt.jpg)
 
 建立好数据库之后就是导入数据库了。
 

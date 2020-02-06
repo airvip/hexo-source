@@ -57,7 +57,7 @@ php-mcrypt.x86_64                       5.4.16-4.el7                   epel
 ``` bash
 [root@localhost html]# yum -y install php-mcrypt.x86_64
 ```
-![php-mcrypt](/img/201605/centos_laravel/php-mcrypt.png)
+![php-mcrypt](https://s2.ax1x.com/2020/02/06/1yJRRP.png)
 
 编集php.ini（我的不需要编辑）
 ``` bash
@@ -99,4 +99,4 @@ Compiling common classes
 > php artisan key:generate
 Application key [mSRzuSWOKR0AfSAJqg6hYsYrX4TUvrk6] set successfully.
 ```
-![laravel5](/img/201605/centos_laravel/laravel5.png)
+![laravel5](https://s2.ax1x.com/2020/02/06/1yJWxf.png)

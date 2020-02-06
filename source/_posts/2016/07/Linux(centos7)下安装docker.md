@@ -81,11 +81,11 @@ Status: Downloaded newer image for docker.io/nginx:latest
 [root@iZ2851a3hysZ ~]# docker run -d -p 8888:80 nginx
 3bf084d58e842a7ca53808d5bc3ae867a63762239024311541527894d177293c
 ```
-**说明**容器内的nginx的80端口，映射到当前服务器的8888端口，当前服务器的ip是115.28.91.226，浏览器输入http://115.28.91.226:8888/，就可以看到nginx已启动，做了域名解析可以直接这样http://diff.wang:8888/
+**说明**容器内的nginx的80端口，映射到当前服务器的8888端口，当前服务器的ip是115.28.91.226，浏览器输入 `http://115.28.91.226:8888/` ，就可以看到nginx已启动，做了域名解析可以直接这样 `http://diff.wang:8888/`
 
 ![运行nginx](/img/201607/dockerinstall/nginxrun.png)
 
-再启动多一个容器，docker run -d -p 8887:80 nginx，浏览器输入http://diff.wang:8087/，就可以看到另外一个nginx已启动
+再启动多一个容器，docker run -d -p 8887:80 nginx，浏览器输入 `http://diff.wang:8087/`，就可以看到另外一个nginx已启动
 到这里就能体现出Docker部署应用和传统部署应用的区别了，传统部署的话，需要人工拷贝多一份nginx，再配置端口，而Docker部署的话，在已制作好的镜像基础上，一条命令就可以部署一个新的应用
 
 # 安装 centos7

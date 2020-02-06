@@ -14,7 +14,7 @@ You have an error in your SQL syntax; check the manual that corresponds to your 
 b-tree 是mysql 索引默认使用的数据结构。
 
 今天导入破解版的小猪cms的sql文件,报了btree的错误。如图：
-![btree error](/img/201605/btree/btree_error.jpg)
+![btree error](https://s2.ax1x.com/2020/02/06/1yJ2Gt.jpg)
 
 
 我查了一下自己的数据库版本，好像有点低了，低了也要解决问题啊！

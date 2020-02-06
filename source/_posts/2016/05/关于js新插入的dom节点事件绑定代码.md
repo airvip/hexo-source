@@ -42,7 +42,7 @@ html代码
 </body>
 </html>
 ```
-![dom no js](/img/201605/dom_js/01js.jpg)
+![dom no js](https://s2.ax1x.com/2020/02/06/1yJjMT.jpg)
 
 
 绑定父级元素来实现，对新添加的dom绑定事件
@@ -54,6 +54,6 @@ $(function(){
     });
 });	
 ```
-![dom has js](/img/201605/dom_js/02js.jpg)
+![dom has js](https://s2.ax1x.com/2020/02/06/1yJvsU.jpg)
 
 

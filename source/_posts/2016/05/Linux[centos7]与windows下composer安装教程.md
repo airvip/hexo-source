@@ -66,7 +66,7 @@ You are already using composer version 1.1.0 (stable channel).
 传送门：[现在就去下载composer安装包](https://getcomposer.org/download/)
 
 进入传送门后，对比下面的图片，**点击**红框位置将直接下载
-![down composer](/img/201605/composer/down_composer.jpg)
+![down composer](https://s2.ax1x.com/2020/02/06/1yJ5qg.jpg)
 
 安装好之后在cmd更新一下
 ``` bsah

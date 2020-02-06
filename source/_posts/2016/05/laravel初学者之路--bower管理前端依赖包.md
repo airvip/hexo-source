@@ -31,12 +31,12 @@ D:\>cd download/apache/htdocs/self/public
 ``` bash
 D:\download\apache\htdocs\self\public>bower install bootstrap
 ```
-![install bootstrap](/img/201605/bower_learn/bootstrap.jpg)
+![install bootstrap](https://s2.ax1x.com/2020/02/06/1yJDqe.jpg)
 从上图可以看出我们的bootstarp3.3.6已经安装好了，并且jquery2.2.3也安装好了
 
 3、检测结果
 在项目的public目录我们可以看到多了bower_components目录，在这个目录里面有我们刚刚安装的bootstarp以及jquery
-![install bootstrap](/img/201605/bower_learn/bower_file.jpg)
+![install bootstrap](https://s2.ax1x.com/2020/02/03/1UKW6O.jpg)
 
 # 关于bower的安装
 

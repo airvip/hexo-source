@@ -24,7 +24,7 @@ Route::get('register', function(){
 ``` bash
 D:\>cd download/apache/htdocs/self>php artisan make:controller Auth/AuthController
 ```
-![create controller](/img/201605/laravel/controller.gif)
+![create controller](https://s2.ax1x.com/2020/02/06/1yYuod.gif)
 
 创建模型
 ``` bash
@@ -122,7 +122,7 @@ body{padding-top:55px;}
 ```
 
 界面如下
-![view html](/img/201605/laravel/view.jpg)
+![view html](https://s2.ax1x.com/2020/02/06/1yYndH.jpg)
 
 编写控制器（文件在：项目/app/http/controllers/auth下）
 ``` php

@@ -48,7 +48,7 @@ syslog-ng-mongodb.x86_64                3.5.6-3.el7                    epel
 ```
 
 安装结果
-![install mongodb server](/img/201605/installmongo/install_mongos.jpg)
+![install mongodb server](https://s2.ax1x.com/2020/02/06/1yYPiR.jpg)
 
 启动mongodb服务
 ``` bash
@@ -60,7 +60,7 @@ syslog-ng-mongodb.x86_64                3.5.6-3.el7                    epel
 [root@localhost ~]# yum -y install mongodb
 ```
 安装结果
-![install mongodb client](/img/201605/installmongo/install_mongoc.jpg)
+![install mongodb client](https://s2.ax1x.com/2020/02/06/1yYEQK.jpg)
 
 连接mongodb
 ``` bash
@@ -87,7 +87,7 @@ temd/system/multi-user.target.wants/mongod.service'
 ```
 
 加入开机启动项结果
-![with system start](/img/201605/installmongo/with_sys.jpg)
+![with system start](https://s2.ax1x.com/2020/02/06/1yYFRx.jpg)
 
 active(running)运行着呢！ enable加入了开机启动项
 
