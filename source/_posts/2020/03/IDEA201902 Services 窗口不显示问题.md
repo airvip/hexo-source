@@ -1,5 +1,5 @@
 ---
-title:IDEA201902 Services 窗口不显示问题
+title: IDEA201902 Services 窗口不显示问题
 date: 2020-03-16 17:05:56
 tags: 
     - Intellij
