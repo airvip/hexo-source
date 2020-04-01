@@ -10,7 +10,6 @@ tags:
 
 Solr 是一个开源独立的企业级搜索应用服务，它建立在 Lucene (全文搜索引擎)之上。Solr 是一个可扩展的，可部署，搜索/存储引擎，优化搜索大量以文本为中心的数据库。
 
-[官方网站](https://jenkins.io/)
 
 <!-- more -->
 
@@ -74,6 +73,7 @@ ADD dynamicdic.txt .
 WORKDIR /opt/solr
 ```
 
+**说明**
 ik-analyzer-8.3.0.jar 可以在 [sonatype](https://search.maven.org/search?q=com.github.magese) 下载
 IKAnalyzer.cfg.xml, ext.dic, stopword.dic, ik.conf, dynamicdic.txt 可以在 [github](https://github.com/magese/ik-analyzer-solr) 下载
 
