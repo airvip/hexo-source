@@ -15,7 +15,11 @@ tags:
 
 ## 创建依赖管理项目
 
-创建 spring-cloud-alibaba-dependencies 文件夹，并在该文件夹下创建 pom.xml 文件，内容如下
+创建 spring-cloud-alibaba-dependencies 文件夹
+
+## POM
+
+进入 spring-cloud-alibaba-dependencies 文件夹，在该文件夹下创建 pom.xml 文件，内容如下
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,13 +86,12 @@ tags:
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
+                <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 

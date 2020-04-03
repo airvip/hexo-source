@@ -59,7 +59,7 @@ Nacos 依赖 [Java](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_j
 [root@localhost ~]# ls -al distribution/target/
 // 进入编译目录
 [root@localhost ~]# cd distribution/target/nacos-server-1.21/nacos/bin
-``
+```
 
 下载编译后压缩包方式
 
