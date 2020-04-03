@@ -136,7 +136,9 @@ public class NacosConsumerApplication {
 
 创建名为 NacosConsumerConfiguration 的 Java 配置类，主要作用是为了注入 RestTemplate，所谓的无配置，并不是没有配置，而是减少了大量繁琐的 xml
 
-使用 `@Configuration` 注解来标识这是 Java 配置类
+使用 `@Configuration` 注解来标识这是 Java 配置类，
+`@Configuration` 相当于原始的 spring-context.xml
+`@Bean` 相当于原始的 `<bean id="restTemplate" class=xxxx>`
 
 ```
 package wang.diff.spring.cloud.alibaba.nacos.consumer.config;
@@ -201,4 +203,35 @@ public class NacosConsumerController {
 
 ## Nacos Discovery 对外暴露的 Endpoint
 
-访问 `http://127.0.0.1:9091/actuator/nacos-discovery`
+访问 `http://127.0.0.1:9091/actuator/nacos-discovery` 如下
+
+```
+{
+    "subscribe": [ ], 
+    "NacosDiscoveryProperties": {
+        "serverAddr": "127.0.0.1:8848", 
+        "endpoint": "", 
+        "namespace": "", 
+        "watchDelay": 30000, 
+        "logName": "", 
+        "service": "nacos-consumer", 
+        "weight": 1, 
+        "clusterName": "DEFAULT", 
+        "group": "DEFAULT_GROUP", 
+        "namingLoadCacheAtStart": "false", 
+        "metadata": {
+            "preserved.register.source": "SPRING_CLOUD"
+        }, 
+        "registerEnabled": true, 
+        "ip": "192.168.1.76", 
+        "networkInterface": "", 
+        "port": 9091, 
+        "secure": false, 
+        "accessKey": "", 
+        "secretKey": "", 
+        "heartBeatInterval": null, 
+        "heartBeatTimeout": null, 
+        "ipDeleteTimeout": null
+    }
+}
+```

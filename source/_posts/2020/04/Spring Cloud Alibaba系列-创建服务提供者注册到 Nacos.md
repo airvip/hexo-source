@@ -190,7 +190,7 @@ Endpoint 暴露的 json 中包含了两种属性:
 1. subscribe: 显示了当前服务有哪些服务订阅者
 2. NacosDiscoveryProperties: 当前应用 Nacos 的基础配置信息
 
-这是 Endpoint 暴露的 json 示例(因为我们还没有做该服务的消费者，所以 subscribe 为空):
+这是 Endpoint 暴露的 json 示例:
 
 ```
 {
