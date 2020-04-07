@@ -120,4 +120,4 @@ $ sudo ln -s ../../mods-available/swoole.ini 20-swoole.ini
 $ php -m
 ```
 
-![phpm](/img/201901/swoole/phpm.png)
+![phpm](https://s1.ax1x.com/2020/04/07/Gcp3vT.png)

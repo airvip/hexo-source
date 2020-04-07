@@ -54,7 +54,7 @@ for y in ya:
 ```
 
 打印结果
-![heart_img](/img/201801/pythonheart/heart_img.png)
+![heart_img](https://s1.ax1x.com/2020/04/07/GcpTsS.png)
 
 # 一行代码实现
 ``` python
@@ -69,7 +69,7 @@ seq：要连接的元素序列、字符串、元组、字典
 print('\n'.join([''.join([('o' if((x*0.05)**2+(y*0.1)**2-1)**3-(x*0.05)**2*(y*0.1)**3<=0 else' ')for x in range(-25,25)])for y in range(12,-12,-1)]))
 ```
 打印结果
-![heart_img](/img/201801/pythonheart/heartoneline.png)
+![heart_img](https://s1.ax1x.com/2020/04/07/GcpoM8.png)
 
 
 

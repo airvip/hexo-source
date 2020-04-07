@@ -12,7 +12,7 @@ tags:
 <!-- more -->
 
 # 表的数据结构
-![统计数据表内容](/img/201801/mysqltable/sqltable01.png)
+![统计数据表内容](https://s1.ax1x.com/2020/04/07/GcpB26.png)
 
 说明：
 create_time 与 update_time 为 int 类型

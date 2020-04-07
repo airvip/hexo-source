@@ -107,7 +107,7 @@ $ sudo add-apt-repository ppa:diesch/testing
 $ sudo apt-get update  
 $ sudo apt-get install classicmenu-indicator  
 ```
-  ![classicmenu-indicator](/img/201801/ubuntu1604/classicmenu.png)
+  ![classicmenu-indicator](https://s1.ax1x.com/2020/04/07/GcpvR0.png)
 
 7. 安装系统指示器SysPeek
 ``` bash
@@ -115,7 +115,7 @@ $ sudo add-apt-repository ppa:nilarimogard/webupd8
 $ sudo apt-get update    
 $ sudo apt-get install syspeek  
 ```
-  ![syspeek](/img/201801/ubuntu1604/syspeek.png)
+  ![syspeek](https://s1.ax1x.com/2020/04/07/GcpjGq.png)
 
 8. 安装vpnc和git
 ``` bash

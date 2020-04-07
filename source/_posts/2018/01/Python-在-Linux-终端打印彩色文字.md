@@ -67,4 +67,4 @@ print("\033[7;32m我要小姐姐\033[0m")
 ```
 
 运行结果
-![python linux terminal print](/img/201801/pythonterminal/py_terminal.png)
+![python linux terminal print](https://s1.ax1x.com/2020/04/07/Gcpqaj.png)

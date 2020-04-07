@@ -15,10 +15,10 @@ tags:
 # 解决流程
 
 1、在开始菜单上单击鼠标右键，选择“命令提示符（管理员）”，如果没有，通过 cortana 搜索 cmd,右键以管理员身份运行，还可以进入C:\Windows\System32，找到cmd.exe，右键管理员身份打开;
-![cmd find](/img/201803/wlan/cmd.jpg)
+![cmd find](https://s1.ax1x.com/2020/04/07/GcC9pt.jpg)
 
 2、在命令提示符框中输入`netsh winsock reset` 按下回车键，在弹出的已重置的提示后重启计算机即可解决问题！
-![netsh](/img/201803/wlan/netsh.jpg)
+![netsh](https://s1.ax1x.com/2020/04/07/Gc9ztA.jpg)
 
 如果大家也遇到 win10 系统提示“没有有效的 IP 配置”，可以尝试下这样解决。
 

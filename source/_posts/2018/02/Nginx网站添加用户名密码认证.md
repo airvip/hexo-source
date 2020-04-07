@@ -87,4 +87,4 @@ $ sudo /etc/init.d/nginx reload
 ```
 
 搞定收工，查看效果如下
-![result htpasswd](/img/201802/htpasswd/result.png)
+![result htpasswd](https://s1.ax1x.com/2020/04/07/Gc9EJ1.png)

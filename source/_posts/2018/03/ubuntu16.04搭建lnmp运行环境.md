@@ -82,7 +82,7 @@ $ sudo systemctl restart php7.0-fpm
 php7.0默认的用户及用户组是`www-data`,可以在`/etc/php/7.0/fpm/pool.d/www.conf`下查看。
 
 由于我的是开发本我就将用户及用户修改为当前用户`airivp`,修改结果如下：
-![php www conf](/img/201803/ubuntu_lnmp/php_www_conf.png)
+![php www conf](https://s1.ax1x.com/2020/04/07/Gc9fw4.png)
 
 # 搭配php与nginx
 修改nginx默认站点配置文件
@@ -92,7 +92,7 @@ $ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_
 $ sudo vim /etc/nginx/sites-available/default
 ```
 修改结果如下
-![default](/img/201803/ubuntu_lnmp/default.png)
+![default](https://s1.ax1x.com/2020/04/07/Gc9gyT.png)
 
 修改完之后重启nginx
 
@@ -107,7 +107,7 @@ $ vim /var/www/html/info.php
 ?>
 ```
 在浏览器访问`http://127.0.0.1/info.php`结果如下，说明配置成功！
-![phpinfo](/img/201803/ubuntu_lnmp/phpinfo.png)
+![phpinfo](https://s1.ax1x.com/2020/04/07/Gc9clV.png)
 
 
 
@@ -125,7 +125,7 @@ $ systemctl status mysql # 查看mysql状态 默认已启动
 ```
 
 以查看 mysql 状态为例说明
-![mysql_status](/img/201803/ubuntu_lnmp/mysql_status.png)
+![mysql_status](https://s1.ax1x.com/2020/04/07/Gc9WmF.png)
 
 从上图中我们已经圈选出两处，`active(running)` 表示已经启动  `enabled`表示开机自启
 

@@ -1,6 +1,6 @@
 ---
 title: Spring Cloud Alibaba系列-创建服务消费者 FeignClient
-date: 2020-04-03 19:12:54git
+date: 2020-04-03 19:12:54
 tags: 
     - Spring Cloud Alibaba
     - Java

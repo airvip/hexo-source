@@ -38,7 +38,7 @@ history 可以非常方便的帮助我们快速定位之前的某些操作。
 如果只是针对本用户我们可以修改 `~/.bashrc` 在文件的末尾加上 HISTTIMEFORMAT="\`whoami\` $F %T "` 这句话即可。
 使其生效请执行`source ~/.bashrc`,这样免去重启电脑。
 查看 history
-![history](/img/201802/history/history.png)
+![history](https://s1.ax1x.com/2020/04/07/Gc9PZ4.png)
 
 针对本用户我们也可以修改 `~/.profile` 在文件的末尾加上 export HISTTIMEFORMAT="\`whoami\` $F %T " 这句话即可。
 使其生效请执行`source ~/.bashrc`,这样免去重启电脑。
