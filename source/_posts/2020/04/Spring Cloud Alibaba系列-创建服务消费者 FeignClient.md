@@ -1,6 +1,6 @@
 ---
-title: Spring Cloud Alibaba系列-创建服务消费者 LoadBalanceClient
-date: 2020-04-03 18:59:41
+title: Spring Cloud Alibaba系列-创建服务消费者 FeignClient
+date: 2020-04-03 19:12:54git
 tags: 
     - Spring Cloud Alibaba
     - Java
