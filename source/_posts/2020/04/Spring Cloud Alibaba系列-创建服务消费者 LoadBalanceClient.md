@@ -17,7 +17,7 @@ tags:
 
 服务消费者与服务提供者相似，因为在 Consumer 端需要去调用 Provider 端提供的 REST 服务。我们使用最原始的一种方式， 即显示的使用 LoadBalanceClient 和 RestTemplate 结合的方式来访问。
 
-》 通过带有负载均衡的 FeignClient 和 RestTemplate 也是可以访问的。（下一章）
+> 通过带有负载均衡的 FeignClient 和 RestTemplate 也是可以访问的。（下一章）
 
 ## 创建服务消费者
 
