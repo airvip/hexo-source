@@ -98,23 +98,6 @@ public class CallServiceFallback implements CallService {
 
 ```
 
-将 NacosConsumerController 控制器的自动注入
-
-```
-    @Autowired
-    private CallService callService;
-```
-
-修改为了手动注入
-
-```
-    private CallService callService;
-
-    public NacosConsumerController(@Qualifier("callServiceFallback") CallService callService) {
-        this.callService = callService;
-    }
-```
-
 关闭服务提供者，通过浏览器访问 `http://127.0.0.1:9092/echo/app-name` 测试，结果如下：
 
 ```
