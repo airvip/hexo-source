@@ -77,16 +77,26 @@ root@ubuntu:~# mkdir -p /usr/local/docker/rocketmq
 root@ubuntu:~# cd /usr/local/docker/rocketmq
 
 # 创建目录
+root@ubuntu:/usr/local/docker/rocketmq# mkdir -p ./rmqs/logs
+root@ubuntu:/usr/local/docker/rocketmq# mkdir -p ./rmqs/store
+root@ubuntu:/usr/local/docker/rocketmq# mkdir -p ./rmq/logs
+root@ubuntu:/usr/local/docker/rocketmq# mkdir -p ./rmq/store
+
+# 设置目录权限
+root@ubuntu:/usr/local/docker/rocketmq# chmod -R 777 ./rmqs/logs
+root@ubuntu:/usr/local/docker/rocketmq# chmod -R 777 ./rmqs/store
+root@ubuntu:/usr/local/docker/rocketmq# chmod -R 777 ./rmq/logs
+root@ubuntu:/usr/local/docker/rocketmq# chmod -R 777 ./rmq/store
+
+# 创建配置
 root@ubuntu:/usr/local/docker/rocketmq# mkdir -p ./rmq/brokerconf
 root@ubuntu:/usr/local/docker/rocketmq# cd rmq/brokerconf
 root@ubuntu:/usr/local/docker/rocketmq/rmq/brokerconf# vim broker.conf
-
-# 复制下面 broker.conf 文件内容进行粘贴
+（复制下面 broker.conf 文件内容进行粘贴）
 
 root@ubuntu:/usr/local/docker/rocketmq/rmq/brokerconf# cd ../../
 root@ubuntu:/usr/local/docker/rocketmq# vim docker-compose.yml
-
-# 复制下面 docker-compose.yml 文件内容进行粘贴
+（复制下面 docker-compose.yml 文件内容进行粘贴）
 
 root@ubuntu:/usr/local/docker/rocketmq# docker-compose up -d
 ```
