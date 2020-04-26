@@ -1,5 +1,5 @@
 ---
-title: k8s系列-kubernetes 开始前的准备
+title: k8s系列-kubernetes 单主集群的搭建
 date: 2020-02-07 09:01:00
 tags: 
     - Kubernetes
