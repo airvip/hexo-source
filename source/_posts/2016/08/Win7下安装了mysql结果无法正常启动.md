@@ -14,7 +14,7 @@ tags:
 # 异常情况
 
 安装完Mysql之后，通过DOS窗口输入net start mysql时，却提示服务名无效，结果如下
-![服务名无效](/img/201608/mysql56/noserver.jpg)
+![服务名无效](https://s1.ax1x.com/2020/05/22/YL7XdJ.jpg)
 
 # 解决流程
 
@@ -25,7 +25,7 @@ tags:
 ``` bash
 D:\download\mysql\bin>mysqld --install
 ```
-![安装服务](/img/201608/mysql56/mysqlinstall.jpg)
+![安装服务](https://s1.ax1x.com/2020/05/22/YL7OZ4.jpg)
 
 再次查看系统服务，好吧现在有了。
 结果启动时，又有来新问题了，Mysql 的 1607 问题，我晕，继续解决，主要是因为咱之前装的 mysql 有些文件没删干净，端口被占用，像mysql安装目录里面的 my.ini,还有注册表里的服务。

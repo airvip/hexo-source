@@ -34,7 +34,7 @@ C:\Users\wzb>npm install -g vue-cli
 ``` bash
 D:\download\workspaces\vue>vue init webpack demo_vue
 ```
-![vue初始化](/img/201608/vueinstall/vueinit.png)
+![vue初始化](https://s1.ax1x.com/2020/05/22/YL7qLF.png)
 
 3 进入项目目录，安装依赖
 ``` bash
@@ -66,4 +66,4 @@ webpack: bundle is now VALID.
 ```
 
 vue 会调用 node 开启服务器程序，在浏览器输入`http://localhost:8080`查看效果
-![vue项目运行](/img/201608/vueinstall/vuerun.png)
+![vue项目运行](https://s1.ax1x.com/2020/05/22/YL7bsU.png)

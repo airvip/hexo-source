@@ -34,14 +34,14 @@ github 不仅是全球码农交友的最大平台，其实还是好多电子书�
 
 4、下面的步骤就和开发正常的网址一样了，添加到 github，提交到 github，推送到 github。
 
-![git clone](/img/201608/githubpages/gitclone.png)
+![git clone](https://s1.ax1x.com/2020/05/22/YL7iUs.png)
 
 # 域名绑定
 
 接下来咱们绑定自己的域名，当然不绑定也可以，你直接访问(你的名称.github.io)就可一看到效果了。
 
 1、进入你的仓库，切换到setting选项卡，在里面找到Github pages面板，在github pages面板里面有一项是custom domain,填写上你的域名，如下
-![respositories](/img/201608/githubpages/respositories.png)
+![respositories](https://s1.ax1x.com/2020/05/22/YL79bQ.png)
 
 2、去你的域名服务提供商那里绑定域名，我的是万网，绑定如下，绑定页面其实都差不多
-![binddomain](/img/201608/githubpages/binddomain.png)
+![binddomain](https://s1.ax1x.com/2020/05/22/YL7PEj.png)

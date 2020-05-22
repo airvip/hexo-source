@@ -37,7 +37,7 @@ docker.x86_64                           1.10.3-44.el7.centos           extras
 # 安装docker(yum如果出错,看篇尾错误是否一致，来解决)
 root@iZ2851a3hysZ ~]# yum -y install docker
 ```
-![docker安装](/img/201607/dockerinstall/dockerinstall.png)
+![docker安装](https://s1.ax1x.com/2020/05/22/YLIXdA.png)
 
 安装完docker,可以看到安装的版本为1.10.3，现在就
 
@@ -83,7 +83,7 @@ Status: Downloaded newer image for docker.io/nginx:latest
 ```
 **说明**容器内的nginx的80端口，映射到当前服务器的8888端口，当前服务器的ip是115.28.91.226，浏览器输入 `http://115.28.91.226:8888/` ，就可以看到nginx已启动，做了域名解析可以直接这样 `http://diff.wang:8888/`
 
-![运行nginx](/img/201607/dockerinstall/nginxrun.png)
+![运行nginx](https://s1.ax1x.com/2020/05/22/YLIjII.png)
 
 再启动多一个容器，docker run -d -p 8887:80 nginx，浏览器输入 `http://diff.wang:8087/`，就可以看到另外一个nginx已启动
 到这里就能体现出Docker部署应用和传统部署应用的区别了，传统部署的话，需要人工拷贝多一份nginx，再配置端口，而Docker部署的话，在已制作好的镜像基础上，一条命令就可以部署一个新的应用

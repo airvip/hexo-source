@@ -152,7 +152,7 @@ $("#clipArea").photoClip({
 ```
 
 效果图
-![效果图](/img/201608/upimg/result.png)
+![效果图](https://s1.ax1x.com/2020/05/22/YL7jo9.png)
 
 手机端支持手势缩放来调整裁剪区域，PC端支持滑轮滚动缩放来调整裁剪区域。
 

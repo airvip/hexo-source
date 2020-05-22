@@ -23,7 +23,7 @@ tags:
 ``` bash
 D:\deve\mysql\bin>mysqld.exe install
 ```
-![mysqld 安装](/img/201609/mysql_noserver/mysqld_install.png)
+![mysqld 安装](https://s1.ax1x.com/2020/05/22/YLHdyT.png)
 有可能会出现  Install/Remove of the Service Denied! 问题，是因为当前用户权限不足导致的。
 
 解决权限不足问题

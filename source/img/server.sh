@@ -1,22 +1,3 @@
----
-title: Springboot 项目启动与停止的 shell 脚本
-date: 2020-05-21 18:01:55
-tags: 
-    - Springboot
-    - Shell
----
-
-> 善良没用，你需要漂亮！
-
-现在很多 Springboot 项目都是以 jar 包方式运行，在 Linux 上为了方便我们启动停止服务，于是我们可以通过下面的脚本来快速启动停止服务。
-
-<!-- more -->
-
-## Shell 脚本
-
-[原始脚本文件在这](/img/server.sh)
-
-``` Bash
 #!/bin/bash
 cd `dirname $0`
 
@@ -58,18 +39,18 @@ fi
 if [ "$1" == "start" ];then
 
     # check server
-        PIDS=`ps --no-heading -C java -f --width 1000 | grep $JAR_NAME | awk '{print $2}'`
-        if [ -n "$PIDS" ]; then
+	PIDS=`ps --no-heading -C java -f --width 1000 | grep $JAR_NAME | awk '{print $2}'`
+	if [ -n "$PIDS" ]; then
         echo -e "ERROR: The $JAR_NAME already started and the PID is ${PIDS}."
         exit 1
     fi
 
-        echo "Starting the $JAR_NAME..."
-
-        # start
-        nohup java $JAVA_MEM_OPTS -jar $SPRING_PROFILES_ACTIV $JAR_PATH >> $LOG_PATH 2>&1 &
-
-        COUNT=0
+	echo "Starting the $JAR_NAME..."
+	
+	# start
+	nohup java $JAVA_MEM_OPTS -jar $SPRING_PROFILES_ACTIV $JAR_PATH >> $LOG_PATH 2>&1 &
+	
+	COUNT=0
     while [ $COUNT -lt 1 ]; do
         sleep 1
         COUNT=`ps  --no-heading -C java -f --width 1000 | grep "$JAR_NAME" | awk '{print $2}' | wc -l`
@@ -82,20 +63,20 @@ if [ "$1" == "start" ];then
     echo "You can check the log file in ${LOG_PATH} for details."
 
 elif [ "$1" == "stop" ];then
-
+ 
     PIDS=`ps --no-heading -C java -f --width 1000 | grep $JAR_NAME | awk '{print $2}'`
     if [ -z "$PIDS" ]; then
         echo "ERROR:The $JAR_NAME does not started!"
         exit 1
     fi
-
-        echo -e "Stopping the $JAR_NAME..."
-
-        for PID in $PIDS; do
+	
+	echo -e "Stopping the $JAR_NAME..."
+	
+	for PID in $PIDS; do
         kill $PID > /dev/null 2>&1
     done
-
-        COUNT=0
+	
+	COUNT=0
     while [ $COUNT -lt 1 ]; do
         sleep 1
         COUNT=1
@@ -107,25 +88,11 @@ elif [ "$1" == "stop" ];then
             fi
         done
     done
-
+ 
     echo -e "${JAR_NAME} Stopped and the PID is ${PIDS}."
 else
     echo_help
     exit 1
 fi
-```
-
-## 使用方式
-
-前提：已经正确的在 Linux 上配置了 JAVA 运行环境。
-
-1. 将上面的 Shell 脚本复制下来保存为 xxx.sh
-2. 将 自己的 xxx.jar 包和 xxx.sh 文件上传到需要部署的 Linux 相关目录中
-3. 给 xxx.sh 分配权限 ： chmod 777 xxx.sh
-4. 启动： ./xxx.sh start
-5. 停止： ./xxx.sh stop
-
-
-
-
-
+	
+	
