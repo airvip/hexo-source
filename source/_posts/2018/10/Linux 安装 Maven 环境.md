@@ -1,8 +1,7 @@
 ---
-title: Linux 安装 Java 环境
+title: Linux 安装 Maven 环境
 date: 2018-10-10 14:43:22
 tags: 
-    - Java
     - Linux
     - Maven
 ---
