@@ -85,7 +85,7 @@ theme: BlueLake
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@git.coding.net:airvip/hexo-blog.git
+  repository: git@e.coding.net:airvip/hexo-blog.git
   branch: master
 
 jsonContent:
