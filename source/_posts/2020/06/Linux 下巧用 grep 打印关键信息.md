@@ -52,7 +52,13 @@ tail -n 100 system.log | grep -v "调用远程日志"
 
 ```
 tail -f system.log
+tail -f system.log | grep --line-buffer "调用远程日志"
 ```
+
+说明：
+管道 `|` 是全缓冲的，一般来说 buffer_size 为 4096，有些是 8192。不管具体值多少，只有 buffer_size 满了，才会看到输出。写入文件操作 `>>file` 也是全缓冲的。
+`grep` 当带上了 `--line-buffer` 的时候，每输出一行，就刷新一次。
+在 unix 里，块设备和普通文件，以及管道都是全缓冲的。
 
 * 统计匹配关键字的次数
 
