@@ -43,7 +43,7 @@ tags:
 
 composer.lock 文件里保存着对每一个代码依赖的版本记录，提交到版本控制器中，并配合 `composer install` 使用，保证了团队所有协作者开发环境、线上生产环境中运行的代码版本的一致性。
 
-![composer.lock](/img/201611/composer/composer.jpg)
+![composer.lock](https://s3.ax1x.com/2021/01/05/sF2y3q.jpg)
 
 
 # 如何新增扩展包

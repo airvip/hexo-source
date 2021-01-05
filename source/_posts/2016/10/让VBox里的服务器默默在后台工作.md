@@ -15,7 +15,7 @@ tags:
 windows键+r键，输入cmd回车，cd到你的安装目录
 这是我的安装目录，查看一下ls（大家的应该是dir查看）
 
-![vbox_dir](/img/201610/vbox/vbox_dir.jpg)
+![vbox_dir](https://s3.ax1x.com/2021/01/05/sFgsOO.jpg)
 
 # vbox管理常用命令
 

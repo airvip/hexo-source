@@ -21,7 +21,7 @@ tags:
 $ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 ```
 
-![bottom](/img/201610/ubuntu_docker/bottom.jpg)
+![bottom](https://s3.ax1x.com/2021/01/05/sFgBSx.jpg)
 
 将启动器修改到左侧
 
@@ -29,4 +29,4 @@ $ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 $ gsettings set com.canonical.Unity.Launcher launcher-position Left
 ```
 
-![left](/img/201610/ubuntu_docker/left.jpg)
+![left](https://s3.ax1x.com/2021/01/05/sFgDl6.jpg)

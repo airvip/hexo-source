@@ -35,7 +35,7 @@ C:\Users\sdqhw>redis-cli
 
 2、鼠标放在命令窗口的标题部分右键，在弹出的右键菜单上面选择【属性】
 
-![cmd_attr](/img/201611/redis-cli/cmd_attr.jpg)
+![cmd_attr](https://s3.ax1x.com/2021/01/05/sF2ObD.jpg)
 
 3、如果当前代码页不是 65001(UTF-8),我们在命令行输入 `chcp 65001`, 把编码修改成 UTF-8
 
@@ -55,7 +55,7 @@ airvip
 127.0.0.1:6379>
 ```
 
-![redis-cli_utf-8_get](/img/201611/redis-cli/redis-cli_utf-8_get.jpg)
+![redis-cli_utf-8_get](https://s3.ax1x.com/2021/01/05/sF2LDO.jpg)
 
 ## Linux(Ubuntu) 操作系统
 
