@@ -36,7 +36,7 @@ public/
 .deploy*/
 ```
 2. 在 github 上建立源码仓库，如：hexo-source
-![创建源码仓库](/img/201702/hexosource/create_repository.png)
+![创建源码仓库](https://s3.ax1x.com/2021/01/13/sNZImT.png)
 3. 在 电脑A 上将源码托管到 github 的 hexo-source 仓库
 说明：之前在 github 上配置了 ssh 的公钥，可以使用 ssh 链接，若没有，请使用 https 链接。
 如果，博客项目根目录下面已经有了 .git 隐藏目录，在 gitbash 下执行下面代码

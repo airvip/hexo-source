@@ -38,7 +38,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 将会创建一个新的 ssh 密钥，使用提供的电子邮件作为标签。
 一般之后三个 enter 键即可
-![ssh-keygen](/img/201702/sshkeygen/ssh-keygen.png)
+![ssh-keygen](https://s3.ax1x.com/2021/01/13/sNeS0O.png)
 现在在使用 `ls ~/.ssh` 至少看到了 id_rsa 与 id_rsa.pub 这两个文件。
 
 # 参数说明

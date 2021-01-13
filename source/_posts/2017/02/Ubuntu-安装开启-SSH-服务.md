@@ -94,7 +94,7 @@ $ /etc/init.d/ssh reload
 # 加入开启启动项
 
 1. 查看是否已经加入开机启动项
-![ssh-enable](/img/201702/ssh/ssh_enable.png)
+![ssh-enable](https://s3.ax1x.com/2021/01/13/sNZj6x.png)
   active(running)运行着呢！ enable加入了开机启动项
 
 2. 如何加入开机启动项呢

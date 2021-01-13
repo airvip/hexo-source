@@ -27,7 +27,7 @@ vmware tools是虚拟机VMware Workstation自带的一款工具。我认为vmwar
 虚拟机主要是以 Ubuntu16.04 Linux 版本为演示目标。
 
 1. 开启虚拟机，在菜单栏中找到  虚拟机>安装VMware tools 或者是 重新安装VMware tools
-![vmtools](/img/201701/vmtools/vmtools01.png)
+![vmtools](https://s3.ax1x.com/2021/01/13/sNZh60.png)
   在 Ubuntu 启动器中有个 DVD 字样的图标，鼠标放在上面显示 VMware tools 的字样，说明虚拟 CD 驱动器已经挂载到咱们的虚拟客户机中了。
 
 2. 启动终端 terminal, 依次执行下面的命令

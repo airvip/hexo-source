@@ -77,10 +77,10 @@ $ cd .ssh/  #进入 .ssh 目录
 $ touch authorized_keys  #创建 authorized_keys 文件
 $ vim authorized_keys  #写入本地计算机的公钥
 ```
-![写入本地计算机的公钥](/img/201702/linuxlogin/linux-ssh.png)
+![写入本地计算机的公钥](https://s3.ax1x.com/2021/01/13/sNZHk4.png)
 
 在本地机器上测试链接远程服务器
-![测试链接远程服务器](/img/201702/linuxlogin/sshlogin.png)
+![测试链接远程服务器](https://s3.ax1x.com/2021/01/13/sNZT7F.png)
 
 # 禁用root远程登录
 

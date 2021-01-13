@@ -51,7 +51,7 @@ workspace 目录结构
 E:\workspace> pyinstaller -F -c --icon=love.ico love.py
 ```
 
-![dist](/img/201703/python_exe/dist.png)
+![dist](https://s3.ax1x.com/2021/01/13/sNeYuV.png)
 
 常用参数说明
 

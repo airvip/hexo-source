@@ -18,7 +18,7 @@ tags:
 
 1. 设置系统输入法，通过 系统设置>语言支持>键盘输入方式系统 然后选择 fcitx 项.
 
-  ![设置系统输入法](/img/201702/sougou/language_set.png)
+  ![设置系统输入法](https://s3.ax1x.com/2021/01/13/sNZqh9.png)
 
 2. 下载搜狗 deb 安装包
   64位下载
@@ -29,7 +29,7 @@ $ wget "https://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "sougou64
 ``` bash
 $ wget "https://pinyin.sogou.com/linux/download.php?f=linux&bit=32" -O "sougou32.deb"
 ```
-  ![下载搜狗](/img/201702/sougou/sougoudown.png)
+  ![下载搜狗](https://s3.ax1x.com/2021/01/13/sNZbtJ.png)
 
 3. 开始安装下载好的安装包
 ``` bash
@@ -46,6 +46,6 @@ $ reboot
 ```
 
 # 结果检验
-![搜狗输入法界面](/img/201702/sougou/sougou_desktop.png)
+![搜狗输入法界面](https://s3.ax1x.com/2021/01/13/sNZOpR.png)
 
 

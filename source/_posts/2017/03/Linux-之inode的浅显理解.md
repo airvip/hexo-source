@@ -38,7 +38,7 @@ inode 包含文件信息如下：
 ``` bash
 $ stat 文件名
 ```
-![文件inode信息](/img/201703/inode/inode_stat.png)
+![文件inode信息](https://s3.ax1x.com/2021/01/13/sNeEct.png)
 
 # inode 的大小
 
@@ -50,8 +50,6 @@ inode也是需要消耗硬盘空间的，所以硬盘格式化的时候，操作
 ``` bash
 $ df -i
 ```
-![inode_dfi信息](/img/201703/inode/inode_dfi.png)
-
 查看每个inode节点的大小
 ``` bash
 $ sudo dumpe2fs -h /dev/xvda1 | grep "Inode size"

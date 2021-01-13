@@ -46,7 +46,7 @@ $ ls -il
 通过上面的代码实例我们可以发现，两个文件名都连接到 283874 这个 inode 号码，并且文件的属性、权限完全一样，并且第三列的硬连接数有 1 变为了 2，这个字段称为“链接”，意思是有多少个文件名连接到这个 inode 号码。
 
 图例：
-![hard link](/img/201703/ln/hard_link.png)
+![hard link](https://s3.ax1x.com/2021/01/13/sNe8cq.png)
 
 # 硬链接特性
 
@@ -76,7 +76,7 @@ $ ls -il new.txt new_symbolic
 通过上面的代码实例我们可以发现，两个文件指向了不同的 inode 号码，也就意味着他们是两个独立的文件，并且链接文件的数据块内容就是目标源文件的"文件名"，并且不难发现，链接文件的大小为 28 bytes ,这是因为箭头(->)后面的文件名 "/home/airvip/Desktop/new.txt" 总共 28 个英文字母，每个英文字母占用 1 byte,所以总共 28 bytes 了。
 
 图例：
-![symbolic link](/img/201703/ln/symbolic_link.png)
+![symbolic link](https://s3.ax1x.com/2021/01/13/sNe33n.png)
 
 # 软连接特性
 

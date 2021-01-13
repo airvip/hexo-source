@@ -27,31 +27,31 @@ Workstation 14 Pro 借助 VMware 虚拟硬件版本 14 的功能特性进一步�
 1. 双击 VMware Workstation 14 Pro 软件包安装文件，或者右键管理员身份打开，提示是否允许更改，点击是；
 
 2. 打开VMware安装向导，点击下一步；
-![VMware安装向导](/img/201701/vm/vm1.png)
+![VMware安装向导](https://s3.ax1x.com/2021/01/13/sNZBOf.png)
 
 3. 同意最终用户协议，点击下一步；
-![同意最终用户协议](/img/201701/vm/vm2.png)
+![同意最终用户协议](https://s3.ax1x.com/2021/01/13/sNZrm8.png)
 
 4. 默认安装在C盘，点击“更改”选择安装位置；
-![安装位置](/img/201701/vm/vm3.png)
+![安装位置](https://s3.ax1x.com/2021/01/13/sNZ06P.png)
 
 5. 用户体验设置，看个人喜好选择性勾选；
-![用户体验设置](/img/201701/vm/vm4.png)
+![用户体验设置](https://s3.ax1x.com/2021/01/13/sNZs0S.png)
 
 6. 选择生成快捷方式；
-![选择生成快捷方式](/img/201701/vm/vm5.png)
+![选择生成快捷方式](https://s3.ax1x.com/2021/01/13/sNZwlt.png)
 
 7. 进行安装；
-![进行安装](/img/201701/vm/vm6.png)
+![进行安装](https://s3.ax1x.com/2021/01/13/sNZckQ.png)
 
 8. 如果有秘钥就点击许可证，没有直接点击完成，我有秘钥就选择许可证，如果当时没有可以之后再激活。
-![激活或完成](/img/201701/vm/vm7.png)
+![激活或完成](https://s3.ax1x.com/2021/01/13/sNZckQ.png)
 
 9. 输入许可证秘钥；
-![输入许可证秘钥](/img/201701/vm/vm8.png)
+![输入许可证秘钥](https://s3.ax1x.com/2021/01/13/sNZgYj.png)
 
 10. 完成安装；
-![完成安装](/img/201701/vm/vm9.png)
+![完成安装](https://s3.ax1x.com/2021/01/13/sNZ2fs.png)
 
 在第八步或者第十步点击完成后可自由选择是否立即重启电脑，因为只有重启后 vmware 的一些配置才会生效。
 
