@@ -192,7 +192,7 @@ root@airvip:~# curl blog.diff.wang -o index.html
 
 `-O` 参数将服务器回应保存成文件，并将 URL 的最后部分当作文件名。
 ```
-root@airvip:~# curl blog.diff.wang/index.html -o
+root@airvip:~# curl blog.diff.wang/index.html -O
 ```
 上面命令将服务器回应保存成文件，文件名为 `index.html`。
 
